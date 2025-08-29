@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 function About() {
   return (
-    <div className="py-8 min-h-screen flex justify-between items-start">
+    <div className="py-8 flex justify-between items-start">
       <div className="mt-15">
         <div className="mb-6 my-2 rounded-2xl bg-[#DDFE9C]/80 w-fit h-fit px-2.5 py-1 flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code h-3 w-3 text-black"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
@@ -34,13 +34,13 @@ function About() {
       </div>
 
       <div>
-        <div className="relative w-[300px] h-[300px] mr-30 mt-15">
+        <div className="relative w-70 h-70 mr-30 mt-15">
         <div className="relative h-70 w-70 transition-transform duration-300 cursor-pointer hover:scale-110 hover:-translate-y-2">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#FF8162] to-[#FEB57F] rounded-full blur-sm opacity-75"></div>
             <Image src="/logo.jpg" alt="Ashish" width={100} height={100} className="rounded-full relative h-70 w-70 z-10" />
           </div>
           <div className="absolute inset-0 flex items-center justify-center">
-    <div className="w-[300px] h-[300px] rounded-full border-4 border-[#DDFE9C]"></div>
+    <div className="w-70 h-70 rounded-full border-4 border-[#DDFE9C] z-10"></div>
   </div>
         <div className="absolute inset-0 flex items-center justify-center animate-spin-slow">
         <Image src='/react.svg' className="absolute top-[-70px] left-1/2 -translate-x-1/2 h-10 w-10" width={100} height={100} alt="React" />
