@@ -6,13 +6,9 @@ import Education from "@/components/Education"
 import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import Projects from "@/components/Projects"
-import Resume from "@/components/resume"
 import Sidebar from "@/components/Sidebar"
 import Techskill from "@/components/Techskill"
 import { useState } from "react"
-
-// #F5E901
-// #DAED6D
 
 function Home() {
   const [active, setActive] = useState("about")
@@ -24,9 +20,8 @@ function Home() {
         <Sidebar active={active} setActive={setActive} />
         <div className="flex-1">
           {active === "about" && <About />}
+          {active === "skill" && <Techskill />}
           {active === "projects" && <Projects />}
-          {active === "techskill" && <Techskill />}
-          {active === "resume" && <Resume />}
           {active === "education" && <Education />}
           {active === "contact" && <Contact />}
         </div>

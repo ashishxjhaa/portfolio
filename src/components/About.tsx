@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 function About() {
   return (
-    <div className="py-8 flex justify-between items-start">
+    <div className="py-8 pl-15 flex justify-between items-start">
       <div className="mt-15">
         <div className="mb-6 my-2 rounded-2xl bg-[#DDFE9C]/80 w-fit h-fit px-2.5 py-1 flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code h-3 w-3 text-black"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
@@ -26,16 +26,16 @@ function About() {
           ]} />
           <hr className="border-gray-600 w-80" />
         </div>
-        <div className="max-w-85 text-gray-100">Welcome to my Portfolio! Im always learning, improving, and open for exciting opportunities where I can grow and add value.</div>
-        <div className="my-4 flex items-center justify-center gap-2 cursor-pointer border border-gray-600 rounded-sm w-fit h-fit px-3 py-1.5">
+        <div className="max-w-85 text-gray-100">{`Welcome to my Portfolio! I'm always learning, improving, and open for exciting opportunities where I can grow and add value.`}</div>
+        <div className="hover:text-scale-110 hover:translate-x-1 duration-300 my-4 flex items-center justify-center gap-2 cursor-pointer border-2 border-[#FEB57F] hover:border-[#FF8162] rounded-lg w-fit h-fit px-3 py-1.5">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text-icon lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-          <div>Resume</div>
+          <div className="font-bold tracking-wide">Resume</div>
         </div>
       </div>
 
       <div>
-        <div className="relative w-70 h-70 mr-30 mt-15">
-        <div className="relative h-70 w-70 transition-transform duration-300 cursor-pointer hover:scale-110 hover:-translate-y-2">
+        <div className="relative w-70 h-70 mr-30 mt-15 duration-300 cursor-pointer hover:scale-110 hover:-translate-y-2">
+        <div className="relative h-70 w-70">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#FF8162] to-[#FEB57F] rounded-full blur-sm opacity-75"></div>
             <Image src="/logo.jpg" alt="Ashish" width={100} height={100} className="rounded-full relative h-70 w-70 z-10" />
           </div>
