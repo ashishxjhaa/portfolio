@@ -29,7 +29,7 @@ function Footer() {
             </div>
             <div className="inline-flex items-center gap-5 mx-4">
                 <div className="rounded-full h-2 w-2 bg-neutral-700"></div>
-                <div>Made by Ashish</div>
+                <div>Designed & Developed by Ashish</div>
             </div>
             </Marquee>
         </div>
