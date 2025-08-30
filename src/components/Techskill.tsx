@@ -1,9 +1,25 @@
 "use client"
 
 import Image from "next/image"
+import { useState } from "react";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 
 function Techskill() {
+  const [progress, setProgress] = useState(0);
+  const [hovered, setHovered] = useState(false)
+
+  const startProgress = () => {
+    setHovered(true)
+    setProgress(0);
+    let value = 0;
+    const interval = setInterval(() => {
+      value += 5;
+      setProgress(value);
+      if (value >= 85) clearInterval(interval);
+    }, 50);
+  };
 
   return (
     <div className="mt-15 px-4 min-h-screen">
@@ -21,11 +37,27 @@ function Techskill() {
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Programming Languages</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
+          <div onMouseEnter={startProgress} onMouseLeave={() => setHovered(false)} className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
+            {!hovered && (
+            <div className={`absolute flex flex-col items-center justify-center text-center ${hovered ? "scale-90": "scale-100"}`}>
               <Image src="/javascript.svg" alt="JavaScript" className="w-14 h-14 object-contain" width={10} height={10}></Image>
               <p className="text-white text-sm font-semibold mt-2">JavaScript</p>
             </div>
+            )}
+            {hovered && (
+              <div className="w-24 h-24">
+                <CircularProgressbar
+                  value={progress}
+                  text={`${progress}%`}
+                  styles={buildStyles({
+                    textColor: "#fff",
+                    pathColor: "#2ecc71",
+                    trailColor: "rgba(46,204,113,0.2)",
+                    textSize: "18px",
+                  })}
+                />
+              </div>
+            )}
           </div>
           <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
             <div className="flex flex-col items-center justify-center text-center">
