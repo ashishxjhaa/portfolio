@@ -7,20 +7,6 @@ import "react-circular-progressbar/dist/styles.css";
 
 
 function Techskill() {
-  const [progress, setProgress] = useState(0);
-  const [hovered, setHovered] = useState(false)
-
-  const startProgress = () => {
-    setHovered(true)
-    setProgress(0);
-    let value = 0;
-    const interval = setInterval(() => {
-      value += 5;
-      setProgress(value);
-      if (value >= 85) clearInterval(interval);
-    }, 50);
-  };
-
   return (
     <div className="mt-15 px-4 min-h-screen">
       <p className="font-medium max-w-3xl text-center text-gray-300 mb-8 text-base sm:text-lg leading-relaxed">
@@ -37,172 +23,61 @@ function Techskill() {
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Programming Languages</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">
-          <div onMouseEnter={startProgress} onMouseLeave={() => setHovered(false)} className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            {!hovered && (
-            <div className={`absolute flex flex-col items-center justify-center text-center ${hovered ? "scale-90": "scale-100"}`}>
-              <Image src="/javascript.svg" alt="JavaScript" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">JavaScript</p>
-            </div>
-            )}
-            {hovered && (
-              <div className="w-24 h-24">
-                <CircularProgressbar
-                  value={progress}
-                  text={`${progress}%`}
-                  styles={buildStyles({
-                    textColor: "#fff",
-                    pathColor: "#2ecc71",
-                    trailColor: "rgba(46,204,113,0.2)",
-                    textSize: "18px",
-                  })}
-                />
-              </div>
-            )}
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/typescript.svg" alt="TypeScript" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Typescript</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/java.svg" alt="Java" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Java</p>
-            </div>
-          </div>
+          <SkillBox img="/javascript.svg" label="JavaScript" maxValue={85} />
+          <SkillBox img="/typescript.svg" label="TypeScript" maxValue={65} />
+          <SkillBox img="/java.svg" label="Java" maxValue={75} />
         </div>
       </div>
 
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Development</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/html-1.svg" alt="html5" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">HTML 5</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/css-3.svg" alt="css3" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">CSS 3</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/nodejs-icon.svg" alt="nodejs" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Node.js</p>
-            </div>
-          </div>
+          <SkillBox img="/html-1.svg" label="HTML 5" maxValue={85} />
+          <SkillBox img="/css-3.svg" label="CSS 3" maxValue={65} />
+          <SkillBox img="/nodejs-icon.svg" label="Node.js" maxValue={75} />
         </div>
       </div>
 
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Databases</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">
-            <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/mongodb-icon-1.svg" alt="mongodb" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">MongoDB</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/postgresql.svg" alt="postgesql" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">PostgreSQL</p>
-            </div>
-          </div>
+          <SkillBox img="/mongodb-icon-1.svg" label="MongoDB" maxValue={85} />
+          <SkillBox img="/postgresql.svg" label="PostgreSQL" maxValue={65} />
         </div>
       </div>
 
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Frameworks</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/next-js.svg" alt="nextjs" className="w-14 h-14 object-contain bg-white" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Next.js</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/expressjs.svg" alt="expressjs" className="w-14 h-14 object-contain bg-white" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Express.js</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/tailwind-css-2.svg" alt="Tailwindcss" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Tailwind CSS</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/ejs-svgrepo-com.svg" alt="Ejs" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">EJS</p>
-            </div>
-          </div>
+          <SkillBox img="/next-js.svg" label="Next.js" maxValue={85} withBg />
+          <SkillBox img="/expressjs.svg" label="Express.js" maxValue={65} withBg />
+          <SkillBox img="/tailwind-css-2.svg" label="Tailwind CSS" maxValue={85} />
+          <SkillBox img="/ejs-svgrepo-com.svg" label="EJS" maxValue={65} />
         </div>
       </div>
 
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Libraries</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/react.svg" alt="react" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">React.js</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/socket-io.svg" alt="socket.iO" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Socket.Io</p>
-            </div>
-          </div>
+          <SkillBox img="/react.svg" label="React.js" maxValue={85} />
+          <SkillBox img="/socket-io.svg" label="Socket.Io" maxValue={65} />
         </div>
       </div>
 
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Tools</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/git-icon.svg" alt="git" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Git</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/github-icon-1.svg" alt="github" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">GitHub</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/postman.svg" alt="postman" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">Postman</p>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/visual-studio-code-1.svg" alt="vscode" className="w-14 h-14 object-contain" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">VS Code</p>
-            </div>
-          </div>
+          <SkillBox img="/git-icon.svg" label="Git" maxValue={85} />
+          <SkillBox img="/github-icon-1.svg" label="GitHub" maxValue={65} />
+          <SkillBox img="/postman.svg" label="Postman" maxValue={85} />
+          <SkillBox img="/visual-studio-code-1.svg" label="VS Code" maxValue={65} />
         </div>
       </div>
 
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Protocols</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">
-          <div className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div className="flex flex-col items-center justify-center text-center">
-              <Image src="/websocket.svg" alt="Websocket" className="w-14 h-14 object-contain bg-white" width={10} height={10}></Image>
-              <p className="text-white text-sm font-semibold mt-2">WebSocket</p>
-            </div>
-          </div>
+          <SkillBox img="/websocket.svg" label="WebSocket" maxValue={85} withBg />
         </div>
       </div>
       </div>
@@ -212,3 +87,50 @@ function Techskill() {
 }
 
 export default Techskill
+
+function SkillBox({ img, label, maxValue, withBg }: { img: string; label: string; maxValue: number; withBg?: boolean }) {
+  const [progress, setProgress] = useState(0);
+  const [hovered, setHovered] = useState(false);
+
+  const startProgress = () => {
+    setHovered(true);
+    setProgress(0);
+    let value = 0;
+    const interval = setInterval(() => {
+      value += 5;
+      setProgress(value);
+      if (value >= maxValue) clearInterval(interval);
+    }, 50);
+  };
+
+  return (
+    <div
+      onMouseEnter={startProgress}
+      onMouseLeave={() => setHovered(false)}
+      className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl"
+    >
+      {!hovered ? (
+        <div className="flex flex-col items-center justify-center text-center">
+          <div className={withBg ? "bg-white" : ""}>
+          <Image src={img} alt={label} className="w-14 h-14 object-contain" width={10} height={10} />
+          </div>
+          <p className="text-white text-sm font-semibold mt-2">{label}</p>
+        </div>
+      ) : (
+        <div className="w-24 h-24">
+          <CircularProgressbar
+            value={progress}
+            maxValue={100}
+            text={`${progress}%`}
+            styles={buildStyles({
+              textColor: "#fff",
+              pathColor: "#2ecc71",
+              trailColor: "rgba(46,204,113,0.2)",
+              textSize: "18px",
+            })}
+          />
+        </div>
+      )}
+    </div>
+  );
+}
