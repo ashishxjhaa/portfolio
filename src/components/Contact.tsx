@@ -1,6 +1,36 @@
+"use client"
+
+import { useRef } from "react"
+import emailjs from "emailjs-com"
+import toast from "react-hot-toast"
 
 
 function Contact() {
+
+  const form = useRef<HTMLFormElement>(null)
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    if (!form.current) return
+
+    const toastId = toast.loading("Sending...")
+
+    emailjs.sendForm(
+      "service_o9vwevq",
+      "template_sz218zk",
+      form.current!,
+      "G2y6X9CPU5ZVKwofj"
+    ).then(
+      () => {
+        toast.success("Message sent successfully", { id: toastId })
+        form.current?.reset()
+      },
+      (error) => {
+        toast.error("Failed to send" + error.text, { id: toastId })
+      }
+    )
+  }
 
   return (
     <div className="mx-10 py-20">
@@ -69,20 +99,21 @@ function Contact() {
       <div className="font-sans text-sm">Reach out to me directly from here</div>
       </div>
 
-      <div className="flex flex-col gap-4 mx-auto pb-20">
+      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 mx-auto pb-20">
         <div className="flex justify-between gap-2">
           <div>
-            <input placeholder="First name*" className="bg-[#262626] pl-5 pr-25 py-2 rounded-xs" />
+            <input type="text" name="firstName" placeholder="First name*" required className="bg-[#262626] pl-5 pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
           </div>
           <div>
-            <input placeholder="Last name*" className="bg-[#262626] pl-5 pr-25 py-2 rounded-xs" />
+            <input type="text" name="lastName" placeholder="Last name*" required className="bg-[#262626] pl-5 pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
           </div>
         </div>
-        <input placeholder="your@gmail.com*" className="bg-[#262626] px-4 py-2 rounded-xs" />
-        <input placeholder="What is this about?" className="bg-[#262626] px-4 py-2 rounded-xs" />
-        <textarea placeholder="Type your message here" className="bg-[#262626] px-4 py-2 min-h-25 max-h-25 rounded-xs" />
-        <div className="w-full rounded-xs bg-[#F5E901] hover:bg-[#F5E901]/90 text-black text-center font-bold font-sans text-sm py-2 cursor-pointer">Send it</div>
-      </div>
+        <input type="email" name="email" placeholder="your@gmail.com*" required className="bg-[#262626] px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
+        <input type="text" name="subject" placeholder="What is this about?" required className="bg-[#262626] px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
+        <textarea name="message" placeholder="Type your message here" required className="bg-[#262626] px-4 py-2 min-h-25 max-h-25 rounded-xs focus:outline-none focus:ring-0" />
+        <button type="submit" className="w-full rounded-xs bg-[#F5E901] hover:bg-[#F5E901]/90 text-black text-center font-bold font-sans text-sm py-2 cursor-pointer">Send it</button>
+      </form>
+
       </div>
 
     </div>
