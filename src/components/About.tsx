@@ -13,11 +13,11 @@ function About() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code h-3 w-3 text-black"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
           <div className="text-black font-bold text-xs">SOFTWARE DEVELOPER</div>
         </div>
-        <div className="font-bold text-3xl tracking-widest ">
+        <div className="font-bold text-3xl tracking-widest">
           <div>{`Hello, I'm`}</div>
           <div>Ashish Jha</div>
         </div>
-        <div className="py-2 pr-2">
+        <div className="py-2 my-5 pr-2">
           <Typewrite examples={[
             "I am a full stack developer",
             "I am a MERN stack developer",
@@ -27,7 +27,7 @@ function About() {
           <hr className="border-gray-600 w-80" />
         </div>
         <div className="max-w-85 text-gray-100">{`Welcome to my Portfolio! I'm always learning, improving, and open for exciting opportunities where I can grow and add value.`}</div>
-        <div className="hover:text-scale-110 hover:translate-x-1 duration-300 my-4 flex items-center justify-center gap-2 cursor-pointer border-2 border-[#FEB57F] hover:border-[#FF8162] rounded-lg w-fit h-fit px-3 py-1.5">
+        <div className="hover:text-scale-110 hover:translate-x-1 duration-300 my-4 flex items-center justify-center gap-2 cursor-pointer border-2 border-[#FEB57F] hover:border-[#FF8162] rounded-lg w-fit h-fit px-3 py-1.5 mt-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text-icon lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
           <div className="font-bold tracking-wide">Resume</div>
         </div>
