@@ -25,9 +25,9 @@ function Navbar({ active, setActive }: { active: string; setActive: (val: string
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
           <div className="font-semibold">Projects</div>
         </a>
-        <a href="#education" onClick={() => setActive("education")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 ${active === "education" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
+        <a href="#experience" onClick={() => setActive("experience")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 ${active === "experience" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-          <div className="font-semibold">Education</div>
+          <div className="font-semibold">Experience</div>
         </a>
         <a href="#contact" onClick={() => setActive("contact")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 ${active === "contact" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>

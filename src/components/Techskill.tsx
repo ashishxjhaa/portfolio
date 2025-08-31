@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function Techskill() {
   return (
-    <div className="pt-5 px-4 min-h-screen">
+    <div className="pt-5 px-4">
       <div className="mt-35 text-5xl max-sm:text-3xl max-md:text-4xl font-bold tracking-tight leading-normal text-center bg-gradient-to-b from-[#DDFE9C]/90 to-[#DDFE9C] bg-clip-text text-transparent">
         Skills
       </div>
@@ -23,7 +23,7 @@ function Techskill() {
         <div><span className="font-bold">Suggestion:</span> Hover over any skill to see my proficiency level.</div>
       </div>
 
-      <div className="space-y-15 mb-40">
+      <div className="space-y-15">
       <div className="relative border border-gray-500 rounded-xl p-8 pt-10">
         <span className="absolute -top-4 left-6 bg-black px-3 text-lg font-semibold text-gray-200">Programming Languages</span>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-40 justify-center">

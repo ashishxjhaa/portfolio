@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee"
 function Footer() {
   
   return (
-    <div className="fixed bottom-0 w-full h-15 mb-1 bg-[#DDFE9C] text-black overflow-hidden z-50">
+    <div className="fixed bottom-0 w-full h-15 bg-[#DDFE9C] text-black overflow-hidden z-50">
         <div className="flex flex-row font-bold py-4 whitespace-nowrap">
             <Marquee autoFill>
             <div className="inline-flex items-center gap-5 mx-4">
