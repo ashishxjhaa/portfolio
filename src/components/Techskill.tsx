@@ -4,17 +4,21 @@ import Image from "next/image"
 import { useState } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { AnimatePresence, motion } from "framer-motion";
 
 
 function Techskill() {
   return (
-    <div className="mt-15 px-4 min-h-screen">
-      <p className="font-medium max-w-3xl text-center text-gray-300 mb-8 text-base sm:text-lg leading-relaxed">
+    <div className="pt-5 px-4 min-h-screen">
+      <div className="mt-35 text-5xl max-sm:text-3xl max-md:text-4xl font-bold tracking-tight leading-normal text-center bg-gradient-to-b from-[#DDFE9C]/90 to-[#DDFE9C] bg-clip-text text-transparent">
+        Skills
+      </div>
+      <p className="font-medium mx-auto max-w-3xl text-center text-gray-300 mb-8 text-base sm:text-lg leading-relaxed">
         I have a solid foundation in Full-stack web development using the MERN stack, Next.js, and TypeScript.
         I enjoy building scalable & user-friendly applications.
       </p>
 
-      <div className="flex max-w-3xl border border-[#DDFE9C] rounded-md px-5 py-2.5 gap-4 mb-20">
+      <div className="flex mx-auto max-w-3xl border border-[#DDFE9C] rounded-md px-5 py-2.5 gap-4 mb-20">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-lightbulb-icon lucide-lightbulb text-yellow-300"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
         <div><span className="font-bold">Suggestion:</span> Hover over any skill to see my proficiency level.</div>
       </div>
@@ -95,7 +99,7 @@ function SkillBox({ img, label, maxValue, withBg }: { img: string; label: string
   const startProgress = () => {
     setHovered(true);
     setProgress(0);
-    let value = 0;
+    let value = 50;
     const interval = setInterval(() => {
       value += 5;
       setProgress(value);
@@ -104,20 +108,17 @@ function SkillBox({ img, label, maxValue, withBg }: { img: string; label: string
   };
 
   return (
-    <div
-      onMouseEnter={startProgress}
-      onMouseLeave={() => setHovered(false)}
-      className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl"
-    >
+    <motion.div onMouseEnter={startProgress} onMouseLeave={() => setHovered(false)} className="relative flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer w-32 h-32 overflow-hidden transition-all duration-300 hover:shadow-xl">
+      <AnimatePresence mode="wait">
       {!hovered ? (
-        <div className="flex flex-col items-center justify-center text-center">
+        <motion.div className="flex flex-col items-center justify-center text-center">
           <div className={withBg ? "bg-white" : ""}>
           <Image src={img} alt={label} className="w-14 h-14 object-contain" width={10} height={10} />
           </div>
           <p className="text-white text-sm font-semibold mt-2">{label}</p>
-        </div>
+        </motion.div>
       ) : (
-        <div className="w-24 h-24">
+        <motion.div className="w-24 h-24">
           <CircularProgressbar
             value={progress}
             maxValue={100}
@@ -127,10 +128,12 @@ function SkillBox({ img, label, maxValue, withBg }: { img: string; label: string
               pathColor: "#2ecc71",
               trailColor: "rgba(46,204,113,0.2)",
               textSize: "18px",
+              pathTransitionDuration: 0.5,
             })}
           />
-        </div>
+        </motion.div>
       )}
-    </div>
+      </AnimatePresence>
+    </motion.div>
   );
 }
