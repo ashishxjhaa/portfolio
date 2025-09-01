@@ -33,7 +33,7 @@ function Home() {
   return (
     <div className="bg-neutral-900 pt-4">
       <Navbar active={active} setActive={setActive} />
-      <div className="pt-20">
+      <div className="pt-8 md:pt-20">
           <>
             <section id="about"><About /></section>
             <section id="skills"><Techskill /></section>
