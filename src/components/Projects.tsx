@@ -58,13 +58,12 @@ function Projects() {
             <div className="flex gap-2 text-slate-300">
             <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">React.js</div>
             <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">Typescript</div>
-            <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">Tailwind CSS</div>
+            <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">TailwindCSS</div>
             <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">Node.js</div>
             <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">Express</div>
             <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">MongoDB</div>
-            <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">Zod</div>
-            <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">jwt</div>
-            </div>
+            <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">Nodemailer</div>
+          </div>
           </div>
         </div>
       </div>
