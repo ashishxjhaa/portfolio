@@ -11,7 +11,7 @@ function Projects() {
       </div>
       <div className="pt-10 flex flex-col lg:flex-row gap-10 justify-center items-center">
       <div className="flex">
-        <div className="w-[565px] h-[400px] bg-black rounded-lg border-3 border-gray-700 hover:border-[#DDFE9C]/80 group">
+        <div className="w-full max-w-[565px] h-auto sm:w-[565px] sm:h-[400px] bg-black rounded-lg border-3 border-gray-700 hover:border-[#DDFE9C]/80 group">
           <Image className="px-2 pt-2.5 w-full h-[275px] rounded-2xl [object-position:0_-33px] hover:scale-95 transition-all duration-400 ease-out object-cover cursor-pointer" src="/projectfunding.png" width={565} height={275} alt="ProjectFunding Preview" />
           <div className="flex justify-between px-4 py-2">
             <div className="font-bold text-xl group-hover:text-[#DDFE9C]">Project Funding</div>
@@ -24,7 +24,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className="mx-5 gap-2 flex flex-col">
+          <div className="mx-5 gap-2 hidden sm:flex flex-col">
             <div className="font-mono text-sm text-slate-100">Tech Stack:</div>
             <div className="flex gap-2 text-slate-300">
             <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">Next.js</div>
@@ -40,7 +40,7 @@ function Projects() {
       </div>
 
       <div className="flex">
-        <div className="w-[565px] h-[400px] bg-black rounded-lg border-3 border-gray-700 hover:border-[#DDFE9C]/80 group">
+        <div className="w-full max-w-[565px] h-auto sm:w-[565px] sm:h-[400px] bg-black rounded-lg border-3 border-gray-700 hover:border-[#DDFE9C]/80 group">
           <Image className="px-2 pt-2.5 w-full h-[275px] rounded-2xl [object-position:0_-33px] hover:scale-95 transition-all duration-400 ease-out object-cover cursor-pointer" src="/reportpiracy.png" width={565} height={275} alt="ProjectFunding Preview" />
           <div className="flex justify-between px-4 py-2">
             <div className="font-bold text-xl group-hover:text-[#DDFE9C]">Report Piracy</div>
@@ -53,7 +53,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className="mx-5 gap-2 flex flex-col">
+          <div className="mx-5 gap-2 hidden sm:flex flex-col">
             <div className="font-mono text-sm text-slate-100">Tech Stack:</div>
             <div className="flex gap-2 text-slate-300">
             <div className=" text-sm rounded-sm bg-[#262626] w-fit h-fit px-1">React.js</div>

@@ -100,7 +100,7 @@ function Contact() {
       <div className="font-sans text-sm">Reach out to me directly from here</div>
       </div>
 
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 mx-auto pb-20">
+      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 mx-auto pb-10 sm:pb-20">
         <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-2">
           <div>
             <input type="text" name="firstName" placeholder="First name*" required className="bg-[#262626] pl-5 pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
