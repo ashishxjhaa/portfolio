@@ -103,10 +103,10 @@ function Contact() {
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 mx-auto pb-10 sm:pb-20">
         <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-2">
           <div>
-            <input type="text" name="firstName" placeholder="First name*" required className="bg-[#262626] pl-5 pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
+            <input type="text" name="firstName" placeholder="First name*" required className="bg-[#262626] pl-5 pr-10 sm:pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
           </div>
           <div>
-            <input type="text" name="lastName" placeholder="Last name*" required className="bg-[#262626] pl-5 pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
+            <input type="text" name="lastName" placeholder="Last name*" required className="bg-[#262626] pl-5 pr-10 sm:pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
           </div>
         </div>
         <input type="email" name="email" placeholder="your@gmail.com*" required className="bg-[#262626] px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
