@@ -17,7 +17,7 @@ function About() {
           <div>{`Hello, I'm`}</div>
           <div>Ashish Jha</div>
         </div>
-        <div className="py-2 my-5 pr-2">
+        <div className="py-2 my-5 sm:pr-2">
           <Typewrite examples={[
             "I am a full stack developer",
             "I am a MERN stack developer",
