@@ -13,11 +13,11 @@ function About() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code h-3 w-3 text-black"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
           <div className="text-black font-bold text-xs">SOFTWARE DEVELOPER</div>
         </div>
-        <div className="font-bold text-3xl tracking-widest">
-          <div>{`Hello, I'm`}</div>
-          <div>Ashish Jha</div>
+        <div>
+          <div className="font-medium text-2xl tracking-wide text-slate-300 pb-1">{`Hi, I'm`} <span className="text-white font-mono">Ashish Jha</span></div>
+          <div className="flex items-center gap-1.5 text-slate-300"><span>18</span><span className="h-1 w-1 rounded-full bg-slate-400" />Bihar, IN<span className="h-1 w-1 rounded-full bg-slate-400" />Full stack web developer</div>
         </div>
-        <div className="py-2 my-5 sm:pr-2">
+        <div className="py-1 my-3 sm:pr-2">
           <Typewrite examples={[
             "I am a full stack developer",
             "I am a MERN stack developer",
@@ -26,15 +26,15 @@ function About() {
           ]} />
           <hr className="border-gray-600 w-65 sm:w-80" />
         </div>
-        <div className="max-w-65 sm:max-w-85 text-gray-100">{`Welcome to my Portfolio! I'm always learning, improving, and open for exciting opportunities where I can grow and add value.`}</div>
+        <div className="max-w-65 sm:max-w-85 text-gray-100">I build web applications that look good, feel fast, and work flawlessly acrossdevices.</div>
         <motion.div whileHover={{ x: 10, transition: { type: "spring", stiffness: 200 } }} className="my-4 flex items-center justify-center gap-2 cursor-pointer border-2 border-[#FEB57F] hover:border-[#FF8162] rounded-lg w-fit h-fit px-3 py-1.5 mt-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text-icon lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-          <a href="https://drive.google.com/file/d/1Ncqs8Zu-JHMWnibbNtgmfH-rJmsIkl4m/view?usp=sharing" target="_blank" className="font-bold tracking-wide">Resume</a>
+          <a href="https://drive.google.com/file/d/1Ncqs8Zu-JHMWnibbNtgmfH-rJmsIkl4m/view?usp=sharing" target="_blank" className="font-bold tracking-wide" onClick={() => new Audio('/click.mp3').play()}>Resume</a>
         </motion.div>
       </div>
 
       <div className="mx-auto mt-10 md:mt-0 md:mx-0">
-        <div className="relative w-40 h-40 sm:w-70 sm:h-70 mr-0 sm:mr-30 mt-15 duration-300 cursor-pointer hover:scale-110 hover:-translate-y-2">
+        <div className="relative w-40 h-40 sm:w-70 sm:h-70 mr-0 sm:mr-30 mt-15 duration-300 cursor-pointer hover:scale-105 hover:-translate-y-2">
         <div className="relative w-40 h-40 sm:h-70 sm:w-70">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#FF8162] to-[#FEB57F] rounded-full blur-sm opacity-75"></div>
             <Image src="/logo.jpg" alt="Ashish" width={100} height={100} className="rounded-full relative w-40 h-40 sm:h-70 sm:w-70 z-10" />

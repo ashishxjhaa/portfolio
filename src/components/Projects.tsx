@@ -16,10 +16,10 @@ function Projects() {
           <div className="flex justify-between px-4 py-2">
             <div className="font-bold text-xl group-hover:text-[#DDFE9C]">Project Funding</div>
             <div className="flex gap-3">
-              <a href={'https://github.com/ashishxjhaa/Project-Funding'} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-[#262626] hover:bg-[#DDFE9C] hover:text-black px-3 py-1.5 cursor-pointer">
+              <a onClick={() => new Audio('/click.mp3').play()} href={'https://github.com/ashishxjhaa/Project-Funding'} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-[#262626] hover:bg-[#DDFE9C] hover:text-black px-3 py-1.5 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
               </a>
-              <a href={'https://projectfunding.vercel.app'} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-[#262626] hover:bg-[#DDFE9C] hover:text-black px-3 py-1.5 cursor-pointer">
+              <a onClick={() => new Audio('/click.mp3').play()} href={'https://projectfunding.vercel.app'} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-[#262626] hover:bg-[#DDFE9C] hover:text-black px-3 py-1.5 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
               </a>
             </div>
@@ -45,10 +45,10 @@ function Projects() {
           <div className="flex justify-between px-4 py-2">
             <div className="font-bold text-xl group-hover:text-[#DDFE9C]">Report Piracy</div>
             <div className="flex gap-3">
-              <a href={'https://github.com/ashishxjhaa/Report-Piracy'} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-[#262626] hover:bg-[#DDFE9C] hover:text-black px-3 py-1.5 cursor-pointer">
+              <a onClick={() => new Audio('/click.mp3').play()} href={'https://github.com/ashishxjhaa/Report-Piracy'} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-[#262626] hover:bg-[#DDFE9C] hover:text-black px-3 py-1.5 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
               </a>
-              <a href={'https://reportpiracy.vercel.app'} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-[#262626] hover:bg-[#DDFE9C] hover:text-black px-3 py-1.5 cursor-pointer">
+              <a onClick={() => new Audio('/click.mp3').play()} href={'https://reportpiracy.vercel.app'} target="_blank" rel="noopener noreferrer" className="rounded-sm bg-[#262626] hover:bg-[#DDFE9C] hover:text-black px-3 py-1.5 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
               </a>
             </div>

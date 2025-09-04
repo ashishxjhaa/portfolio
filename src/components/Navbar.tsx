@@ -9,7 +9,7 @@ function Navbar({ active, setActive }: { active: string; setActive: (val: string
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="fixed top-4 left-4 right-4 py-3 mx-auto px-4 h-15 bg-black rounded-xl z-50">
+    <div className="fixed top-4 left-4 right-4 py-3 mx-auto px-4 h-15 bg-[#2C2125]/40 backdrop-blur-md rounded-xl z-50">
         <div className="flex justify-between">
         <div className="flex justify-center items-center cursor-pointer gap-3">
           <motion.a href="https://ashishxjha.vercel.app" whileHover={{ rotate: -360, scale: 1.15 }} transition={{ duration: 0.7 }}>
@@ -19,23 +19,23 @@ function Navbar({ active, setActive }: { active: string; setActive: (val: string
         </div>
 
         <div className="hidden md:flex justify-end gap-3">
-        <motion.a href="#about" onClick={() => setActive("about")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "about" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
+        <motion.a href="#about" onClick={() => { setActive("about"); new Audio('/click.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "about" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
           <div className="font-semibold">About</div>
         </motion.a>
-        <motion.a href="#skills" onClick={() => setActive("skills")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "skills" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
+        <motion.a href="#skills" onClick={() => { setActive("skills"); new Audio('/click.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "skills" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
           <div className="font-semibold">Skills</div>
         </motion.a>
-        <motion.a href="#projects" onClick={() => setActive("projects")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "projects" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
+        <motion.a href="#projects" onClick={() => { setActive("projects"); new Audio('/click.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "projects" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
           <div className="font-semibold">Projects</div>
         </motion.a>
-        <motion.a href="#experience" onClick={() => setActive("experience")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "experience" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
+        <motion.a href="#experience" onClick={() => { setActive("experience"); new Audio('/click.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "experience" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
           <div className="font-semibold">Experience</div>
         </motion.a>
-        <motion.a href="#contact" onClick={() => setActive("contact")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "contact" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
+        <motion.a href="#contact" onClick={() => { setActive("contact"); new Audio('/click.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 ${active === "contact" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] hover:text-black"}`}>
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
           <div className="font-semibold">Contact</div>
         </motion.a>

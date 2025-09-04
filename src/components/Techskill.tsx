@@ -95,6 +95,10 @@ export default Techskill
 function SkillBox({ img, label, maxValue, withBg }: { img: string; label: string; maxValue: number; withBg?: boolean }) {
   const [progress, setProgress] = useState(0);
   const [hovered, setHovered] = useState(false);
+  const playSound = () => {
+    const sound = new Audio('/hover.mp3');
+    sound.play();
+  }
 
   const startProgress = () => {
     setHovered(true);
@@ -105,6 +109,8 @@ function SkillBox({ img, label, maxValue, withBg }: { img: string; label: string
       setProgress(value);
       if (value >= maxValue) clearInterval(interval);
     }, 50);
+
+    playSound()
   };
 
   return (

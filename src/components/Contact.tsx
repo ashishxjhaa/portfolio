@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import emailjs from "emailjs-com"
-import toast from "react-hot-toast"
+import { toast } from "sonner"
 import { motion } from "framer-motion";
 
 
@@ -47,7 +47,7 @@ function Contact() {
       <motion.div whileHover={{ y: -12, transition: { type: "spring", stiffness: 300 } }} className="group relative flex h-full w-full flex-col items-center justify-center p-6 bg-gray-800/60 backdrop-blur-lg rounded-2xl border border-gray-200/50 shadow-lg text-white cursor-pointer">
       <div className="absolute top-4 right-4 z-10">
         <button onClick={() => { navigator.clipboard.writeText("+91 8294430359"); toast.success("Copied!")}} aria-label="Copy Phone to clipboard" className="p-2 rounded-full text-gray-400 hover:bg-gray-700/80 transition-colors cursor-pointer">
-          <div>
+          <div onClick={() => new Audio('/copy.mp3').play()}>
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="remixicon w-5 h-5"><path d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z"></path></svg>
           </div>
         </button>
@@ -62,7 +62,7 @@ function Contact() {
       <motion.div whileHover={{ y: -12, transition: { type: "spring", stiffness: 300 } }} className="group relative flex h-full w-full flex-col items-center justify-center p-6 bg-gray-800/60 backdrop-blur-lg rounded-2xl border border-gray-200/50 shadow-lg text-white cursor-pointer">
       <div className="absolute top-4 right-4 z-10">
         <button onClick={() => { navigator.clipboard.writeText("ashishxyzjha@gmail.com"); toast.success("Copied!")}} aria-label="Copy Email to clipboard" className="p-2 rounded-full text-gray-400 hover:bg-gray-700/80 transition-colors cursor-pointer">
-          <div>
+          <div onClick={() => new Audio('/copy.mp3').play()}>
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="remixicon w-5 h-5"><path d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z"></path></svg>
           </div>
         </button>
@@ -77,7 +77,7 @@ function Contact() {
       <motion.div whileHover={{ y: -12, transition: { type: "spring", stiffness: 300 } }} className="group relative flex h-full w-full flex-col items-center justify-center p-6 bg-gray-800/60 backdrop-blur-lg rounded-2xl border border-gray-200/50 shadow-lg text-white cursor-pointer">
       <div className="absolute top-4 right-4 z-10">
         <button onClick={() => { navigator.clipboard.writeText("ashishxjha"); toast.success("Copied!")}} aria-label="Copy Twitter to clipboard" className="p-2 rounded-full text-gray-400 hover:bg-gray-700/80 transition-colors cursor-pointer">
-          <div>
+          <div onClick={() => new Audio('/copy.mp3').play()}>
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="remixicon w-5 h-5"><path d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z"></path></svg>
           </div>
         </button>
@@ -112,7 +112,7 @@ function Contact() {
         <input type="email" name="email" placeholder="your@gmail.com*" required className="bg-[#262626] px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
         <input type="text" name="subject" placeholder="What is this about?" required className="bg-[#262626] px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
         <textarea name="message" placeholder="Type your message here" required className="bg-[#262626] px-4 py-2 min-h-25 max-h-25 rounded-xs focus:outline-none focus:ring-0" />
-        <button type="submit" className="w-full rounded-xs bg-[#F5E901] hover:bg-[#F5E901]/90 text-black text-center font-bold font-sans text-sm py-2 cursor-pointer">Send it</button>
+        <button onClick={() => new Audio('/click.mp3').play()} type="submit" className="w-full rounded-xs bg-[#F5E901] hover:bg-[#F5E901]/90 text-black text-center font-bold font-sans text-sm py-2 cursor-pointer">Send it</button>
       </form>
 
       </div>
