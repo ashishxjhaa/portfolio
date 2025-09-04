@@ -12,7 +12,9 @@ function Navbar({ active, setActive }: { active: string; setActive: (val: string
     <div className="fixed top-4 left-4 right-4 py-3 mx-auto px-4 h-15 bg-black rounded-xl z-50">
         <div className="flex justify-between">
         <div className="flex justify-center items-center cursor-pointer gap-3">
-          <Image src='/logo.jpg' alt="Profile" width={24} height={24} className="rounded-full" />
+          <motion.div whileHover={{ rotate: -360, scale: 1.2 }} transition={{ duration: 0.7 }}>
+            <Image src='/logo.jpg' alt="Profile" width={35} height={35} className="rounded-md" />
+          </motion.div>
           <div className="text-xl font-bold">ASHISH</div>
         </div>
 
