@@ -29,7 +29,7 @@ function About() {
         <div className="max-w-65 sm:max-w-85 text-gray-100">I build web applications that look good, feel fast, and work flawlessly acrossdevices.</div>
         <motion.div whileHover={{ x: 10, transition: { type: "spring", stiffness: 200 } }} className="my-4 flex items-center justify-center gap-2 cursor-pointer border-2 border-[#FEB57F] hover:border-[#FF8162] rounded-lg w-fit h-fit px-3 py-1.5 mt-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text-icon lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-          <a href="https://drive.google.com/file/d/1Ncqs8Zu-JHMWnibbNtgmfH-rJmsIkl4m/view?usp=sharing" target="_blank" className="font-bold tracking-wide" onClick={() => new Audio('/click.mp3').play()}>Resume</a>
+          <a href="https://drive.google.com/file/d/1Ncqs8Zu-JHMWnibbNtgmfH-rJmsIkl4m/view?usp=sharing" target="_blank" className="font-bold tracking-wide" onClick={() => new Audio('/switchtab.mp3').play()}>Resume</a>
         </motion.div>
       </div>
 
