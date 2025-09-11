@@ -37,7 +37,7 @@ export default function RootLayout({
       >
         <SplashLayout>
           <AnimatedLayout>
-            <ThemeProvider attribute="class" defaultTheme="dark">
+            <ThemeProvider attribute="class" defaultTheme="light">
               {children}
               <Toaster position="bottom-right" theme="dark" />
             </ThemeProvider>
