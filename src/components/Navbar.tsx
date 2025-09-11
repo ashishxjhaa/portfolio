@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { ThemeButton } from "./ThemeButton";
 
 
 function Navbar({ active, setActive }: { active: string; setActive: (val: string) => void }) {
@@ -39,11 +40,16 @@ function Navbar({ active, setActive }: { active: string; setActive: (val: string
           <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
           <div className="font-semibold">Contact</div>
         </motion.a>
-
+           
         </div>
+        <div className="flex">
           <div onClick={() => setOpen(!open)} className="flex md:hidden items-center cursor-pointer pr-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
           </div>
+          <ThemeButton />
+          <div className="bg-neutral-50 dark:bg-neutral-950"></div>
+    
+        </div>
         </div>
 
         {open && (

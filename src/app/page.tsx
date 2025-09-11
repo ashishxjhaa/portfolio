@@ -31,7 +31,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="bg-neutral-900 pt-4">
+    <div className="bg-neutral-900 pt-4 overflow-x-hidden">
       <Navbar active={active} setActive={setActive} />
       <div className="pt-8 md:pt-20">
           <>

@@ -37,3 +37,27 @@ body {
 .CircularProgressbar-text {
   font-weight: bold;
 }
+
+::view-transition-group(root) {
+  animation-duration: 0.9s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+::view-transition-new(root) {
+  animation-name: slide-down-reveal;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  z-index: -1;
+}
+
+@keyframes slide-down-reveal {
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
