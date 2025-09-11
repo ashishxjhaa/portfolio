@@ -13,9 +13,8 @@ function Techskill() {
       <div className="mt-35 text-5xl max-sm:text-3xl max-md:text-4xl font-bold tracking-tight leading-normal text-center bg-gradient-to-b from-[#DDFE9C]/90 to-[#DDFE9C] bg-clip-text dark:text-transparent text-black">
         Skills
       </div>
-      <p className="font-medium mx-auto max-w-3xl text-center dark:text-gray-300 text-neutral-600 mb-8 text-sm sm:text-lg leading-relaxed">
-        I have a solid foundation in Full-stack web development using the MERN stack, Next.js, and TypeScript.
-        I enjoy building scalable & user-friendly applications.
+      <p className="font-medium max-w-3xl mx-auto text-center dark:text-gray-300 text-neutral-600 mb-8 text-md sm:text-lg leading-relaxed">
+        Technologies and tools I work with.
       </p>
 
       <div className="hidden sm:flex mx-auto max-w-3xl border dark:border-[#DDFE9C] border-black rounded-md px-5 py-2.5 gap-4 mb-20">
