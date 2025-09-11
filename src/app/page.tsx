@@ -3,7 +3,6 @@
 import About from "@/components/About"
 import Contact from "@/components/Contact"
 import Experience from "@/components/Experience"
-import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import Projects from "@/components/Projects"
 import Techskill from "@/components/Techskill"
@@ -31,18 +30,15 @@ function Home() {
   }, []);
 
   return (
-    <div className="bg-neutral-900 pt-4 overflow-x-hidden">
+    <div className="bg-neutral-900 dark:bg-white pt-4 overflow-x-hidden">
       <Navbar active={active} setActive={setActive} />
-      <div className="pt-8 md:pt-20">
-          <>
-            <section id="about"><About /></section>
-            <section id="skills"><Techskill /></section>
-            <section id="projects"><Projects /></section>
-            <section id="experience"><Experience /></section>
-            <section id="contact"><Contact /></section>
-          </>
+      <div>
+        <section id="about"><About /></section>
+        <section id="skills"><Techskill /></section>
+        <section id="projects"><Projects /></section>
+        <section id="experience"><Experience /></section>
+        <section id="contact"><Contact /></section>
       </div>
-      <Footer />
     </div>
   )
 }
