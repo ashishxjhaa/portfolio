@@ -14,8 +14,8 @@ function About() {
           <div className="text-black font-bold text-xs">SOFTWARE DEVELOPER</div>
         </div>
         <div>
-          <div className="font-medium text-2xl tracking-wide text-slate-300 dark:text-neutral-700 pb-1">{`Hi, I'm`} <span className="text-white dark:text-black font-mono">Ashish Jha</span></div>
-          <div className="flex items-center gap-1.5 text-slate-300 dark:text-neutral-700"><span>18</span><span className="h-1 w-1 rounded-full bg-slate-400 dark:bg-neutral-700" />Bihar, IN<span className="h-1 w-1 rounded-full bg-slate-400 dark:bg-neutral-700" />Full stack web developer</div>
+          <div className="font-medium text-2xl tracking-wide dark:text-slate-300 text-neutral-700 pb-1">{`Hi, I'm`} <span className="dark:text-white text-black font-mono">Ashish Jha</span></div>
+          <div className="flex items-center gap-1.5 dark:text-slate-300 text-neutral-700"><span>18</span><span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />Bihar, IN<span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />Full stack web developer</div>
         </div>
         <div className="py-1 my-3 sm:pr-2">
           <Typewrite examples={[
@@ -26,10 +26,10 @@ function About() {
           ]} />
           <hr className="border-gray-600 w-65 sm:w-80" />
         </div>
-        <div className="max-w-65 sm:max-w-85 text-gray-100 dark:text-neutral-800">I build web applications that look good, feel fast, and work flawlessly acrossdevices.</div>
+        <div className="max-w-65 sm:max-w-85 dark:text-gray-100 text-neutral-800">I build web applications that look good, feel fast, and work flawlessly acrossdevices.</div>
         <motion.div whileHover={{ x: 10, transition: { type: "spring", stiffness: 200 } }} className="my-4 flex items-center justify-center gap-2 cursor-pointer border-2 border-[#FEB57F] hover:border-[#FF8162] rounded-lg w-fit h-fit px-3 py-1.5 mt-10">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text-icon lucide-file-text text-white dark:text-black"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-          <a href="https://drive.google.com/file/d/1Ncqs8Zu-JHMWnibbNtgmfH-rJmsIkl4m/view?usp=sharing" target="_blank" className="font-bold tracking-wide text-white dark:text-black" onClick={() => new Audio('/switchtab.mp3').play()}>Resume</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text-icon lucide-file-text dark:text-white text-black"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+          <a href="https://drive.google.com/file/d/1Ncqs8Zu-JHMWnibbNtgmfH-rJmsIkl4m/view?usp=sharing" target="_blank" className="font-bold tracking-wide dark:text-white text-black" onClick={() => new Audio('/switchtab.mp3').play()}>Resume</a>
         </motion.div>
       </div>
 
@@ -77,7 +77,7 @@ const Typewrite = ({ examples }: { examples: string[] }) => {
 
   return <p className="mb-2.5 text-sm font-light uppercase">
     <span className="inline-block h-2.5 w-2.5 bg-[#FF8162]" />
-    <span className="ml-3 text-white dark:text-black">
+    <span className="ml-3 dark:text-white text-black">
       :{" "}
      {examples[exampleIndex].split("").map((l, i) => {
       return ( 
@@ -89,7 +89,7 @@ const Typewrite = ({ examples }: { examples: string[] }) => {
         >{l}</motion.span>
         <motion.span
           initial={{ opacity: 0, }} animate={{ opacity: [0, 1, 0], }} transition={{ delay: i * LETTER_DELAY, times: [0, 0.1, 1], duration: BOX_FADE_DURATION, ease: easeInOut, }}
-          className="absolute bottom-[3px] left-[1px] right-0 top-[3px] bg-white dark:bg-black" />
+          className="absolute bottom-[3px] left-[1px] right-0 top-[3px] dark:bg-white bg-black" />
       </motion.span>
       )
      })}
