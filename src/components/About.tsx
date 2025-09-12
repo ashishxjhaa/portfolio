@@ -11,16 +11,40 @@ function About() {
   return (
     <>
     <BookCall />
-    <div className="py-8 pb-18 pl-15 pt-8 sm:pt-10 md:pt-45 flex flex-col md:flex-row md:justify-between items-start max-w-4xl mx-auto">
-      <div className="pt-15">
-        <div className="mb-6 my-2 rounded-2xl bg-[#DDFE9C]/80 w-fit h-fit px-2.5 py-1 flex items-center gap-2">
+    <div className="flex items-center justify-center">
+      <div className="pt-40">
+        <div className="mb-6 my-2 rounded-2xl bg-[#DDFE9C]/80 px-2.5 py-1 w-fit h-fit flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code h-3 w-3 text-black"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
           <div className="text-black font-bold text-xs">FULL STACK WEB DEVELOPER</div>
         </div>
+
+
         <div>
-          <div className="font-medium text-2xl tracking-wide dark:text-slate-300 text-neutral-700 pb-1">{`Hi, I'm`} <span className="dark:text-white text-black font-mono">Ashish Jha</span></div>
-          <div className="flex items-center gap-1.5 dark:text-slate-300 text-neutral-700"><span>18</span><span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />Bihar, INDIA <span className="inline-flex items-center gap-2 rounded-full border border-border bg-muted px-2 py-1 text-xs text-muted-foreground sm:px-3 sm:py-1.5 sm:text-sm"><span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-full bg-[#34D399] shadow-[0_0_0_4px_rgba(52,211,153,0.15)]"></span>Open to work</span></div>
+        <div className="flex items-center gap-3">
+          <div className="font-medium text-2xl tracking-wide dark:text-slate-300 text-neutral-700 pb-1">
+            {`Hi, I'm`} <span className="dark:text-white text-black font-mono">Ashish Jha</span>
+          </div>
+
+          <div className="relative w-18 h-18">
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#FF8162] to-[#FEB57F] rounded-xl blur-xs opacity-40 -rotate-8"></div>
+            <Image src="/logo.jpg" alt="Ashish" width={100} height={100} className="rounded-md relative w-18 h-18 z-10 -rotate-8" />
+          </div>
         </div>
+        
+
+
+          <div className="flex items-center gap-1.5 dark:text-slate-300 text-neutral-700">
+            <span>18</span>
+            <span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />
+            Bihar, IN 
+            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-muted px-2 py-1 text-xs text-muted-foreground sm:px-3 sm:py-1.5 sm:text-sm">
+              <span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-full bg-[#34D399] shadow-[0_0_0_4px_rgba(52,211,153,0.15)]"></span>
+              Open to work
+            </span>
+          </div>
+        </div>
+
+
         <div className="py-1 my-3 sm:pr-2">
           <Typewrite examples={[
             "I am a full stack developer",
@@ -42,15 +66,6 @@ function About() {
           </div>
         </div>
 
-      </div>
-
-      <div className="mx-auto mt-10 md:mt-0 md:mx-0">
-        <div className="relative w-40 h-40 sm:w-70 sm:h-70 mr-0 sm:mr-30 mt-15 md:pl-8">
-        <div className="relative w-40 h-40 sm:h-70 sm:w-70">
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#FF8162] to-[#FEB57F] rounded-3xl blur-sm opacity-75 -rotate-8"></div>
-            <Image src="/logo.jpg" alt="Ashish" width={100} height={100} className="rounded-3xl relative w-40 h-40 sm:h-70 sm:w-70 z-10 -rotate-8" />
-          </div>
-        </div>
       </div>
     </div>
    </>
