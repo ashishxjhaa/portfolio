@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { easeInOut, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { getCalApi } from "@calcom/embed-react";
 
@@ -11,8 +11,8 @@ function About() {
   return (
     <>
     <BookCall />
-    <div className="flex items-center justify-center">
-      <div className="pt-40">
+    <div className="flex justify-center">
+      <div className="pt-40 mx-auto">
         <div className="mb-6 my-2 rounded-2xl bg-[#DDFE9C]/80 px-2.5 py-1 w-fit h-fit flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code h-3 w-3 text-black"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
           <div className="text-black font-bold text-xs">FULL STACK WEB DEVELOPER</div>
@@ -45,16 +45,20 @@ function About() {
         </div>
 
 
-        <div className="py-1 my-3 sm:pr-2">
-          <Typewrite examples={[
-            "I am a full stack developer",
-            "I am a MERN stack developer",
-            "I know Typescript & Next.js",
-            "I can build cool projects",
-          ]} />
-          <hr className="border-gray-600 w-110" />
+        <div className="py-1 my-3">
+          <RotatingText 
+            examples={[
+              "Full stack developer",
+              "Open Source Contributor",
+              "MERN Developer",
+              "Creating with code. Small details matter.",
+              "Typescript & Next.js",
+              "Build cool projects. Responsive design.",
+            ]} 
+          />
+          <hr className="border-gray-600 w-90" />
         </div>
-        <div className="text-sm max-w-120 dark:text-gray-100 text-neutral-800">{`Feel free to explore my portfolio and reach out - I'd love to connect!`}</div>
+        <div className="text-sm max-w-90 sm:max-w-120 dark:text-gray-100 text-neutral-800">{`Feel free to explore my portfolio and reach out - I'd love to connect!`}</div>
 
         <div className="flex gap-8">
           <motion.div whileHover={{ x: 10, transition: { type: "spring", stiffness: 200 } }} className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full dark:bg-white bg-gray-200 w-fit h-fit px-6 py-3 mt-10">
@@ -75,45 +79,34 @@ function About() {
 export default About
 
 
-const LETTER_DELAY = 0.025;
-const BOX_FADE_DURATION = 0.145;
-const FADE_DELAY = 5;
-const MAIN_FADE_DURATION = 0.25;
-const SWAP_DELAY_IN_MS = 5500;
+const SWAP_DELAY_IN_MS = 2500;
 
-
-const Typewrite = ({ examples }: { examples: string[] }) => {
-  const [exampleIndex, setExampleIndex] = useState(0);
+const RotatingText = ({ examples }: { examples: string[] }) => {
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setExampleIndex((pv) => (pv + 1) % examples.length);
+    const id = setInterval(() => {
+      setIndex((prev) => (prev + 1) % examples.length);
     }, SWAP_DELAY_IN_MS);
+    return () => clearInterval(id);
+  }, [examples]);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  return (
+    <AnimatePresence mode="wait">
+      <motion.p
+        key={index}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="mb-2.5 text-sm font-light dark:text-white text-black"
+      >
+        <span className="ml-3 font-mono">{examples[index]}</span>
+      </motion.p>
+    </AnimatePresence>
+  );
+};
 
-  return <p className="mb-2.5 text-sm font-light uppercase">
-    <span className="inline-block h-2.5 w-2.5 bg-[#FF8162]" />
-    <span className="ml-3 dark:text-white text-black">
-      :{" "}
-     {examples[exampleIndex].split("").map((l, i) => {
-      return ( 
-      <motion.span 
-        initial={{ opacity: 1, }} animate={{ opacity: 0, }} transition={{ delay: FADE_DELAY, duration: MAIN_FADE_DURATION, ease: easeInOut, }}
-        className="relative" key={`${exampleIndex}-${i}`}>
-        <motion.span
-        initial={{ opacity: 0, }} animate={{ opacity: 1, }} transition={{ delay: i * LETTER_DELAY, duration: 0, }}
-        >{l}</motion.span>
-        <motion.span
-          initial={{ opacity: 0, }} animate={{ opacity: [0, 1, 0], }} transition={{ delay: i * LETTER_DELAY, times: [0, 0.1, 1], duration: BOX_FADE_DURATION, ease: easeInOut, }}
-          className="absolute bottom-[3px] left-[1px] right-0 top-[3px] dark:bg-white bg-black" />
-      </motion.span>
-      )
-     })}
-    </span>
-  </p>
-}
 
 const BookCall = () => {
   useEffect(() => {
