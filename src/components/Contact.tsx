@@ -103,15 +103,15 @@ function Contact() {
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 mx-auto pb-10 sm:pb-20">
         <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-2">
           <div>
-            <input type="text" name="firstName" placeholder="First name*" required className="dark:bg-[#262626] bg-gray-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 text-white dark:text-black pl-5 pr-10 sm:pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
+            <input type="text" name="firstName" placeholder="First name*" required className="dark:bg-[#262626] bg-gray-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 dark:text-white text-black pl-5 pr-10 sm:pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
           </div>
           <div>
-            <input type="text" name="lastName" placeholder="Last name*" required className="dark:bg-[#262626] bg-gray-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 text-white dark:text-black pl-5 pr-10 sm:pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
+            <input type="text" name="lastName" placeholder="Last name*" required className="dark:bg-[#262626] bg-gray-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 dark:text-white text-black pl-5 pr-10 sm:pr-25 py-2 rounded-xs focus:outline-none focus:ring-0" />
           </div>
         </div>
-        <input type="email" name="email" placeholder="your@gmail.com*" required className="dark:bg-[#262626] bg-gray-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 text-white dark:text-black px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
-        <input type="text" name="subject" placeholder="What is this about?" required className="dark:bg-[#262626] bg-gray-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 text-white dark:text-black px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
-        <textarea name="message" placeholder="Type your message here" required className="dark:bg-[#262626] bg-slate-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 text-white dark:text-black px-4 py-2 min-h-25 max-h-25 rounded-xs focus:outline-none focus:ring-0" />
+        <input type="email" name="email" placeholder="your@gmail.com*" required className="dark:bg-[#262626] bg-gray-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 dark:text-white text-black px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
+        <input type="text" name="subject" placeholder="What is this about?" required className="dark:bg-[#262626] bg-gray-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 dark:text-white text-black px-4 py-2 rounded-xs focus:outline-none focus:ring-0" />
+        <textarea name="message" placeholder="Type your message here" required className="dark:bg-[#262626] bg-slate-200 dark:placeholder:text-gray-300 placeholder:text-gray-600 dark:text-white text-black px-4 py-2 min-h-25 max-h-25 rounded-xs focus:outline-none focus:ring-0" />
         <button onClick={() => new Audio('/switchtab.mp3').play()} type="submit" className="w-full rounded-xs bg-[#F5E901] hover:bg-[#F5E901]/90 text-black text-center font-bold font-sans text-sm py-2 cursor-pointer">Send it</button>
       </form>
 
