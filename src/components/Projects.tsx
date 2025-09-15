@@ -12,9 +12,9 @@ function Projects() {
       <div className="pt-10 flex flex-col lg:flex-row gap-10 justify-center items-center">
       <div className="flex">
         <div className="w-full max-w-[565px] h-auto sm:w-[565px] sm:h-[400px] dark:bg-black bg-gray-100 rounded-lg border-3 border-gray-700 dark:hover:border-[#DDFE9C]/80 hover:border-red-300 group">
-          <Image className="px-2 pt-2.5 w-full h-[275px] rounded-2xl [object-position:0_-33px] hover:scale-95 transition-all duration-400 ease-out object-cover cursor-pointer" src="/projectfunding.png" width={565} height={275} alt="ProjectFunding Preview" />
-          <div className="flex justify-between px-4 py-2">
-            <div className="font-bold text-xl dark:text-white text-black group-hover:text-red-500 dark:group-hover:text-[#DDFE9C]">Project Funding</div>
+          <Image className="px-2 pt-2.5 w-[465px] h-[175px] sm:w-full sm:h-[275px] rounded-2xl [object-position:0_-33px] hover:scale-95 transition-all duration-400 ease-out object-cover cursor-pointer" src="/projectfunding.png" width={565} height={275} alt="ProjectFunding Preview" />
+          <div className="flex justify-between px-4 py-2 gap-2 sm:gap-0">
+            <div className="font-medium whitespace-nowrap sm:font-bold text-xl dark:text-white text-black group-hover:text-red-500 dark:group-hover:text-[#DDFE9C]">Project Funding</div>
             <div className="flex gap-3">
               <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/Project-Funding'} target="_blank" rel="noopener noreferrer" className="rounded-sm dark:bg-[#262626] bg-gray-400 dark:hover:bg-[#DDFE9C] hover:bg-red-300 dark:text-white text-black dark:hover:text-black px-3 py-1.5 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
@@ -41,9 +41,9 @@ function Projects() {
 
       <div className="flex">
         <div className="w-full max-w-[565px] h-auto sm:w-[565px] sm:h-[400px] dark:bg-black bg-gray-100 rounded-lg border-3 border-gray-700 dark:hover:border-[#DDFE9C]/80 hover:border-red-300 group">
-          <Image className="px-2 pt-2.5 w-full h-[275px] rounded-2xl [object-position:0_-33px] hover:scale-95 transition-all duration-400 ease-out object-cover cursor-pointer" src="/reportpiracy.png" width={565} height={275} alt="ProjectFunding Preview" />
+          <Image className="px-2 pt-2.5 w-[465px] h-[175px] sm:w-full sm:h-[275px] rounded-2xl [object-position:0_-33px] hover:scale-95 transition-all duration-400 ease-out object-cover cursor-pointer" src="/reportpiracy.png" width={565} height={275} alt="ProjectFunding Preview" />
           <div className="flex justify-between px-4 py-2">
-            <div className="font-bold text-xl dark:text-white text-black group-hover:text-red-500 dark:group-hover:text-[#DDFE9C]">Report Piracy</div>
+            <div className="font-medium whitespace-nowrap sm:font-bold text-xl dark:text-white text-black group-hover:text-red-500 dark:group-hover:text-[#DDFE9C]">Report Piracy</div>
             <div className="flex gap-3">
               <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/Report-Piracy'} target="_blank" rel="noopener noreferrer" className="rounded-sm dark:bg-[#262626] bg-gray-400 dark:hover:bg-[#DDFE9C] hover:bg-red-300 dark:text-white text-black dark:hover:text-black px-3 py-1.5 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
