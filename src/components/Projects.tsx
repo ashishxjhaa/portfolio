@@ -9,7 +9,7 @@ function Projects() {
       <div className="text-5xl max-sm:text-3xl max-md:text-4xl font-bold tracking-tight leading-normal text-center bg-gradient-to-b from-[#DDFE9C]/90 to-[#DDFE9C] bg-clip-text dark:text-transparent text-black">
         Projects
       </div>
-      <div className="pt-10 flex flex-col lg:flex-row gap-10 justify-center items-center">
+      <div className="pt-10 flex flex-col xl:flex-row gap-10 justify-center items-center">
       <div className="flex">
         <div className="w-full max-w-[565px] h-auto sm:w-[565px] sm:h-[400px] dark:bg-black bg-gray-100 rounded-lg border-3 border-gray-700 dark:hover:border-[#DDFE9C]/80 hover:border-red-300 group">
           <Image className="px-2 pt-2.5 w-[465px] h-[175px] sm:w-full sm:h-[275px] rounded-2xl [object-position:0_-33px] hover:scale-95 transition-all duration-400 ease-out object-cover cursor-pointer" src="/projectfunding.png" width={565} height={275} alt="ProjectFunding Preview" />
