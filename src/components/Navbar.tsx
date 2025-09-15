@@ -54,24 +54,24 @@ function Navbar({ active, setActive }: { active: string; setActive: (val: string
         </div>
 
         {open && (
-          <div className="flex flex-col mt-3 py-3 gap-2 md:hidden dark:bg-black bg-gray-100">
-            <motion.a href="#about" onClick={() => setActive("about")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-80 self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "about" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
+          <div className="flex flex-col mt-3 py-3 gap-2 md:hidden dark:bg-black bg-gray-100 w-full px-4">
+            <motion.a href="#about" onClick={() => setActive("about")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-full self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "about" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
               <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
               <div className={`font-semibold ${active === "about" ? "text-black" : "" }`}>About</div>
             </motion.a>
-            <motion.a href="#skills" onClick={() => setActive("skills")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-80 self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "skills" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
+            <motion.a href="#skills" onClick={() => setActive("skills")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-full self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "skills" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
               <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
               <div className={`font-semibold ${active === "skills" ? "text-black" : "" }`}>Skills</div>
             </motion.a>
-            <motion.a href="#projects" onClick={() => setActive("projects")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-80 self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "projects" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
+            <motion.a href="#projects" onClick={() => setActive("projects")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-full self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "projects" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
               <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
               <div className={`font-semibold ${active === "projects" ? "text-black" : "" }`}>Projects</div>
             </motion.a>
-            <motion.a href="#experience" onClick={() => setActive("experience")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-80 self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "experience" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
+            <motion.a href="#experience" onClick={() => setActive("experience")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-full self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "experience" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
               <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
               <div className={`font-semibold ${active === "experience" ? "text-black" : "" }`}>Experience</div>
             </motion.a>
-            <motion.a href="#contact" onClick={() => setActive("contact")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 w-80 self-center py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "contact" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
+            <motion.a href="#contact" onClick={() => setActive("contact")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 w-full self-center py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "contact" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
               <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
               <div className={`font-semibold ${active === "contact" ? "text-black" : "" }`}>Contact</div>
             </motion.a>
