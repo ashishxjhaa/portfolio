@@ -51,14 +51,14 @@ function About() {
               "Full stack developer",
               "Open Source Contributor",
               "MERN Developer",
-              "Creating with code. Small details matter.",
+              "Small details matter.",
               "Typescript & Next.js",
-              "Build cool projects. Responsive design.",
+              "Responsive design.",
             ]} 
           />
-          <hr className="border-gray-600 w-90" />
+          <hr className="border-gray-600 w-70 sm:w-90" />
         </div>
-        <div className="text-sm max-w-90 sm:max-w-120 dark:text-gray-100 text-neutral-800">{`Feel free to explore my portfolio and reach out - I'd love to connect!`}</div>
+        <div className="text-sm max-w-75 sm:max-w-120 dark:text-gray-100 text-neutral-800">{`Feel free to explore my portfolio and reach out - I'd love to connect!`}</div>
 
         <div className="flex gap-8">
           <motion.div whileHover={{ x: 10, transition: { type: "spring", stiffness: 200 } }} className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full dark:bg-white bg-gray-200 w-fit h-fit px-6 py-3 mt-10">
