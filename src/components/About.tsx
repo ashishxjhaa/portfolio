@@ -1,9 +1,9 @@
 "use client"
 
 import Image from "next/image"
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { getCalApi } from "@calcom/embed-react";
+import { Mail } from "lucide-react";
 
 
 function About() {
@@ -11,59 +11,45 @@ function About() {
   return (
     <>
     <BookCall />
-    <div className="flex justify-center">
-      <div className="pt-40 mx-auto">
-        <div className="mb-6 my-2 rounded-2xl bg-[#DDFE9C]/80 px-2.5 py-1 w-fit h-fit flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code h-3 w-3 text-black"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
-          <div className="text-black font-bold text-xs">FULL STACK WEB DEVELOPER</div>
-        </div>
+    <div className="flex justify-between mx-10 pt-25">
+     <a href="mailto:ashishxyzjha@gmail.com" className="cursor-pointer w-fit h-fit flex items-center gap-5">
+       <Mail className="w-4 sm:w-6 h-4 sm:h-6 text-[#4F47E5]" />
+       <span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />
+       <div className="text-sm opacity-75 dark:text-white text-black underline underline-offset-4">ashishxyzjha@gmail.com</div>
+     </a>
 
+      <div className="flex dark:text-slate-300 text-neutral-700">
+        <span className="inline-flex items-center gap-2 rounded-full border border-border bg-muted px-3 py-2 text-xs text-muted-foreground sm:text-sm">
+          <span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-full bg-[#34D399] shadow-[0_0_0_4px_rgba(52,211,153,0.15)]"></span>
+          Open to work
+        </span>
+      </div>
+    </div>
 
+    <div className="flex">
+      <div className="pt-20 mx-auto">
         <div>
-        <div className="flex items-center gap-3">
-          <div className="font-medium text-2xl tracking-wide dark:text-slate-300 text-neutral-700 pb-1">
-            {`Hi, I'm`} <span className="dark:text-white text-black font-mono">Ashish Jha</span>
+          <div className="flex items-center font-bold text-2xl sm:text-4xl gap-5 tracking-wide dark:text-slate-300 text-neutral-700">
+            {`Hi, I'm`} 
+            <div className="relative w-18 h-18">
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#FF8162] to-[#FEB57F] rounded-xl blur-xs opacity-40 -rotate-8"></div>
+              <Image src="/logo.jpg" alt="Ashish" width={100} height={100} className="rounded-md relative w-18 h-18 z-10 -rotate-8" />
+            </div>
+            <div className="dark:text-slate-300 text-neutral-800">Ashish Jha!</div>
           </div>
 
-          <div className="relative w-18 h-18">
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#FF8162] to-[#FEB57F] rounded-xl blur-xs opacity-40 -rotate-8"></div>
-            <Image src="/logo.jpg" alt="Ashish" width={100} height={100} className="rounded-md relative w-18 h-18 z-10 -rotate-8" />
-          </div>
-        </div>
-        
-
-
-          <div className="flex items-center gap-1.5 dark:text-slate-300 text-neutral-700">
-            <span>18</span>
-            <span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />
-            Bihar, IN 
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-muted px-2 py-1 text-xs text-muted-foreground sm:px-3 sm:py-1.5 sm:text-sm">
-              <span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-full bg-[#34D399] shadow-[0_0_0_4px_rgba(52,211,153,0.15)]"></span>
-              Open to work
-            </span>
+          <div className="pt-2 flex items-center font-medium text-2xl sm:text-3xl gap-2 tracking-wide dark:text-slate-300 text-neutral-700">
+            {`I'm a`} 
+            <div className="dark:text-white text-black font-bold">Full Stack Engineer <span className="font-medium dark:text-slate-300 text-neutral-700">&</span></div>
           </div>
         </div>
 
-
-        <div className="py-1 my-3">
-          <RotatingText 
-            examples={[
-              "Full stack developer",
-              "Open Source Contributor",
-              "MERN Developer",
-              "Small details matter.",
-              "Typescript & Next.js",
-              "Responsive design.",
-            ]} 
-          />
-          <hr className="border-gray-600 w-70 sm:w-90" />
-        </div>
-        <div className="text-sm max-w-75 sm:max-w-120 dark:text-gray-100 text-neutral-800">{`Feel free to explore my portfolio and reach out - I'd love to connect!`}</div>
+        <div className="pt-5 text-sm max-w-sm md:max-w-lg lg:max-w-xl dark:text-white text-black opacity-85">I build web applications that look good, feel fast, and work flawlessly across devices.</div>
 
         <div className="flex gap-8">
-          <motion.div whileHover={{ x: 10, transition: { type: "spring", stiffness: 200 } }} className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full dark:bg-white bg-gray-200 w-fit h-fit px-6 py-3 mt-10">
+          <div className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full dark:bg-white bg-gray-200 hover:bg-gray-200 dark:hover:bg-white/90 w-fit h-fit px-6 py-3 mt-10">
             <a href="https://drive.google.com/file/d/1Ncqs8Zu-JHMWnibbNtgmfH-rJmsIkl4m/view?usp=sharing" target="_blank" className="font-medium text-md tracking-wide text-black dark:text-black" onClick={() => new Audio('/switchtab.mp3').play()}>View Resume</a>
-          </motion.div>
+          </div>
           
           <div data-cal-namespace="quick-chat" data-cal-link="ashishxjha/quickchat" data-cal-config='{"layout":"month_view"}' className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full bg-[#4F47E5] hover:bg-[#4F47E5]/90 w-fit h-fit px-6 py-3 mt-10">
             <div className="font-medium text-md tracking-wide text-white">Book a call</div>
@@ -72,40 +58,22 @@ function About() {
 
       </div>
     </div>
+
+    <div className="px-10 pt-10">
+      <h2 className="text-lg sm:text-xl dark:text-white text-black font-bold">About</h2>
+      <p className="text-sm dark:text-white text-black opacity-75 font-mono">
+        {`Hello! I'm a Full Stack Web Developer. 
+        Currently learning web3, building scalable SaaS and decentralized applications.
+        I love turning ideas into products that bridge Web2 and Web3. 
+        Beyond coding, I enjoy experimenting, sharing, and contributing to the developer ecosystem.
+        Feel free to explore my portfolio and reach out - I'd love to connect!`}
+      </p>
+    </div>
    </>
   )
 }
 
 export default About
-
-
-const SWAP_DELAY_IN_MS = 2500;
-
-const RotatingText = ({ examples }: { examples: string[] }) => {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setIndex((prev) => (prev + 1) % examples.length);
-    }, SWAP_DELAY_IN_MS);
-    return () => clearInterval(id);
-  }, [examples]);
-
-  return (
-    <AnimatePresence mode="wait">
-      <motion.p
-        key={index}
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="mb-2.5 text-sm font-light dark:text-white text-black"
-      >
-        <span className="ml-3 font-mono">{examples[index]}</span>
-      </motion.p>
-    </AnimatePresence>
-  );
-};
 
 
 const BookCall = () => {

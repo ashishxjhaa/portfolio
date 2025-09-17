@@ -1,16 +1,18 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { ThemeButton } from "./ThemeButton";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { IconArrowUpRight } from "@tabler/icons-react";
 
 
-function Navbar({ active, setActive }: { active: string; setActive: (val: string) => void }) {
-  const [open, setOpen] = useState(false)
+function Navbar() {
 
   return (
-    <div className="fixed top-4 left-4 right-4 py-3 mx-auto px-4 h-15 bg-[#2C2125]/40 backdrop-blur-md rounded-xl z-50">
+    <div className="fixed top-4 left-4 right-4 py-3 mx-auto px-4 h-15 dark:bg-[#2C2125]/40 bg-white/60 backdrop-blur-md rounded-xl z-50">
         <div className="flex justify-between">
           <div className="flex justify-center items-center cursor-pointer gap-3">
             <motion.a href="https://ashishxjha.vercel.app" onHoverStart={() => {new Audio('/hover.mp3').play()}} whileHover={{ rotate: -360, scale: 1.15 }} transition={{ duration: 0.7 }}>
@@ -19,64 +21,29 @@ function Navbar({ active, setActive }: { active: string; setActive: (val: string
             <div className="text-xl font-bold dark:text-white text-black">ASHISH</div>
           </div>
 
-          <div className="hidden md:flex justify-end gap-3">
-            <motion.a href="#about" onClick={() => { setActive("about"); new Audio('/switchtab.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 text-black dark:text-white ${active === "about" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "about" ? "text-black" : "" }`}>About</div>
-            </motion.a>
-            <motion.a href="#skills" onClick={() => { setActive("skills"); new Audio('/switchtab.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 text-black dark:text-white ${active === "skills" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "skills" ? "text-black" : "" }`}>Skills</div>
-            </motion.a>
-            <motion.a href="#projects" onClick={() => { setActive("projects"); new Audio('/switchtab.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 text-black dark:text-white ${active === "projects" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "projects" ? "text-black" : "" }`}>Projects</div>
-            </motion.a>
-            <motion.a href="#experience" onClick={() => { setActive("experience"); new Audio('/switchtab.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 text-black dark:text-white ${active === "experience" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "experience" ? "text-black" : "" }`}>Experience</div>
-            </motion.a>
-            <motion.a href="#contact" onClick={() => { setActive("contact"); new Audio('/switchtab.mp3').play()}} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 py-2 transform transition-all duration-500 text-black dark:text-white ${active === "contact" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "contact" ? "text-black" : "" }`}>Contact</div>
-            </motion.a>
+          <div className="flex justify-end gap-3">
 
-            <ThemeButton />
-          </div>
+            <Link href="https://x.com/ashishxjha" onClick={() => new Audio("/switchtab.mp3").play()} target="_blank" className="flex items-center gap-2 mx-4 relative group transition-opacity opacity-70 hover:opacity-100">
+              <span className="dark:text-white text-black opacity-70 group-hover:opacity-100 flex items-center font-bold gap-2 transition-transform duration-500 ease-in-out group-hover:-translate-x-2">
+                <FaXTwitter />
+                <div className="dark:text-white text-black opacity-70 group-hover:opacity-100">Twitter</div>
+              </span>
+              <IconArrowUpRight size={48} strokeWidth={1} className="absolute h-[20px] -right-8 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:text-white text-black" />
+            </Link>
 
-          <div className="flex md:hidden items-center cursor-pointer pr-4 gap-4">
-            <div onClick={() => setOpen(!open)}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu-icon lucide-menu text-white"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
-            </div>
+
+            <Link href="https://github.com/ashishxjhaa" onClick={() => new Audio("/switchtab.mp3").play()} target="_blank" className="flex items-center gap-2 mx-4 relative group transition-opacity opacity-70 hover:opacity-100">
+              <span className="dark:text-white text-black opacity-70 group-hover:opacity-100 flex items-center font-bold gap-2 transition-transform duration-500 ease-in-out group-hover:-translate-x-2">
+                <FaGithub />
+                <div className="dark:text-white text-black opacity-70 group-hover:opacity-100">GitHub</div>
+              </span>
+              <IconArrowUpRight size={48} strokeWidth={1} className="absolute h-[20px] -right-8 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:text-white text-black" />
+            </Link>
+
             <ThemeButton />
           </div>
 
         </div>
-
-        {open && (
-          <div className="flex flex-col mt-3 py-3 gap-2 md:hidden dark:bg-black bg-gray-100 w-full px-4">
-            <motion.a href="#about" onClick={() => setActive("about")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-full self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "about" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "about" ? "text-black" : "" }`}>About</div>
-            </motion.a>
-            <motion.a href="#skills" onClick={() => setActive("skills")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-full self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "skills" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "skills" ? "text-black" : "" }`}>Skills</div>
-            </motion.a>
-            <motion.a href="#projects" onClick={() => setActive("projects")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-full self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "projects" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "projects" ? "text-black" : "" }`}>Projects</div>
-            </motion.a>
-            <motion.a href="#experience" onClick={() => setActive("experience")} className={`flex items-center gap-3 cursor-pointer rounded-sm w-full self-center px-4 py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "experience" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "experience" ? "text-black" : "" }`}>Experience</div>
-            </motion.a>
-            <motion.a href="#contact" onClick={() => setActive("contact")} className={`flex items-center gap-3 cursor-pointer rounded-sm px-4 w-full self-center py-2 transform transition-all duration-500 border border-[#DAED6D] text-black dark:text-white ${active === "contact" ? "bg-[#F5E901] text-black" : "hover:bg-[#DAED6D] dark:hover:text-black"}`}>
-              <div className="rounded-full h-3 w-3 bg-neutral-700"></div>
-              <div className={`font-semibold ${active === "contact" ? "text-black" : "" }`}>Contact</div>
-            </motion.a>
-          </div>
-        )}
       </div>
   )
 }
