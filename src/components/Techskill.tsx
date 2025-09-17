@@ -11,9 +11,9 @@ function Techskill() {
       <div className="text-5xl max-sm:text-3xl max-md:text-4xl font-bold tracking-tight leading-normal text-center bg-gradient-to-b from-[#DDFE9C]/90 to-[#DDFE9C] bg-clip-text dark:text-transparent text-black">
         Skills
       </div>
-      <div className="mt-10 relative border border-gray-500 rounded-xl p-8 pt-10 max-w-xl mx-auto">
+      <div className="mt-10 relative border border-gray-500 rounded-xl p-8 pt-10 w-[90%] mx-auto">
         <span className="absolute -top-4 left-6 dark:bg-black bg-gray-200 px-3 text-lg font-semibold dark:text-gray-200 text-neutral-700">Tech Stack</span>
-        <div className="grid grid-cols-6 lg:grid-cols-9 gap-4 justify-items-center">
+        <div className="grid grid-cols-6 lg:grid-cols-9 gap-10 justify-items-center">
           
           <TechIcon label="JavaScript">
             <Image src="/javascript.svg" alt="JavaScript" className="w-12 h-12 object-contain" width={48} height={48} />
