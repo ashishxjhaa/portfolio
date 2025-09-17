@@ -11,7 +11,7 @@ function About() {
   return (
     <>
     <BookCall />
-    <div className="flex justify-between mx-10 pt-25">
+    <div className="flex justify-between mx-auto pt-25 w-[85%] max-w-4xl">
      <a href="mailto:ashishxyzjha@gmail.com" className="cursor-pointer w-fit h-fit flex items-center gap-5">
        <Mail className="w-4 sm:w-6 h-4 sm:h-6 text-[#4F47E5]" />
        <span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />
@@ -59,7 +59,7 @@ function About() {
       </div>
     </div>
 
-    <div className="px-10 pt-10">
+    <div className="px-10 pt-10 max-w-2xl mx-auto">
       <h2 className="text-lg sm:text-xl dark:text-white text-black font-bold">About</h2>
       <p className="text-sm dark:text-white text-black opacity-75 font-mono">
         {`Hello! I'm a Full Stack Web Developer. 
