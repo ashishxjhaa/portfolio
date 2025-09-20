@@ -26,7 +26,7 @@ function Navbar() {
             <Link href="https://x.com/ashishxjha" onClick={() => new Audio("/switchtab.mp3").play()} target="_blank" className="flex items-center gap-2 mx-4 relative group transition-opacity opacity-70 hover:opacity-100">
               <span className="dark:text-white text-black opacity-70 group-hover:opacity-100 flex items-center font-bold gap-2 transition-transform duration-500 ease-in-out group-hover:-translate-x-2">
                 <FaXTwitter />
-                <div className="dark:text-white text-black opacity-70 group-hover:opacity-100">Twitter</div>
+                <div className="hidden sm:block dark:text-white text-black opacity-70 group-hover:opacity-100">Twitter</div>
               </span>
               <IconArrowUpRight size={48} strokeWidth={1} className="absolute h-[20px] -right-8 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:text-white text-black" />
             </Link>
@@ -35,7 +35,7 @@ function Navbar() {
             <Link href="https://github.com/ashishxjhaa" onClick={() => new Audio("/switchtab.mp3").play()} target="_blank" className="flex items-center gap-2 mx-4 relative group transition-opacity opacity-70 hover:opacity-100">
               <span className="dark:text-white text-black opacity-70 group-hover:opacity-100 flex items-center font-bold gap-2 transition-transform duration-500 ease-in-out group-hover:-translate-x-2">
                 <FaGithub />
-                <div className="dark:text-white text-black opacity-70 group-hover:opacity-100">GitHub</div>
+                <div className="hidden sm:block dark:text-white text-black opacity-70 group-hover:opacity-100">GitHub</div>
               </span>
               <IconArrowUpRight size={48} strokeWidth={1} className="absolute h-[20px] -right-8 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:text-white text-black" />
             </Link>
