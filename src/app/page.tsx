@@ -2,6 +2,7 @@
 
 import About from "@/components/About"
 import Contact from "@/components/Contact"
+import Education from "@/components/Education"
 import Navbar from "@/components/Navbar"
 import Projects from "@/components/Projects"
 import Techskill from "@/components/Techskill"
@@ -14,6 +15,7 @@ function Home() {
       <About />
       <Techskill />
       <Projects />
+      <Education />
       <Contact />
     </div>
   )

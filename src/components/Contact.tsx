@@ -37,7 +37,7 @@ function Contact() {
   return (
     <div className="mx-10 py-20">
       <div className="text-center">
-        <div className="inline-block border-b-4 dark:border-white/80 border-black/70 text-5xl max-sm:text-3xl max-md:text-4xl font-bold tracking-tight leading-normal bg-gradient-to-b dark:text-white text-black">
+        <div className="inline-block border-b-4 dark:border-white/80 border-black/70 text-4xl max-sm:text-3xl max-md:text-4xl font-bold tracking-tight leading-normal bg-gradient-to-b dark:text-white text-black">
           Get In Touch
         </div>
         <div className="py-10 font-sans dark:text-white text-black">Have a question or a project in mind? I would love to hear from you.</div>
