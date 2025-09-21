@@ -11,7 +11,7 @@ function Education() {
             <div className="dark:text-white text-black max-w-xl mx-auto">
                 <div className="text-2xl sm:text-4xl font-medium tracking-tight leading-normal">Education</div>
             </div>
-            <a href="https://shooliniuniversity.com" target="_blank" className="flex gap-3 sm:gap-5 max-w-xl mx-auto pt-6 group">
+            <a onClick={() => new Audio('/switchtab.mp3').play()} href="https://shooliniuniversity.com" target="_blank" className="flex gap-3 sm:gap-5 max-w-xl mx-auto pt-6 group">
                 <div>
                     <Image src="/shooliniuniversity.jpeg" width={100} height={100} alt="University" className="w-10 h-10 sm:w-13 sm:h-13 rounded-full object-cover border" />
                 </div>
@@ -21,7 +21,7 @@ function Education() {
                         <span className="text-sm">Shoolini University</span>
                         <span className="opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-6 transition-all duration-450"><MdKeyboardDoubleArrowRight /></span>
                     </div>
-                    <div className="text-xs sm:text-sm dark:text-white text-black opacity-90 whitespace-nowrap">Bachelor of Computer Applications</div>
+                    <div className="text-xs sm:text-sm dark:text-white text-black opacity-85 whitespace-nowrap">Bachelor of Computer Applications</div>
                 </div>
                 <div className="opacity-75 dark:text-gray-300 text-neutral-700 whitespace-nowrap text-xs sm:text-md">2025 - 2028</div>
                 </div>

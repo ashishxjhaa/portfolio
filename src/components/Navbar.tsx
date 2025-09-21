@@ -12,7 +12,7 @@ import { IconArrowUpRight } from "@tabler/icons-react";
 function Navbar() {
 
   return (
-    <div className="fixed top-4 left-4 right-4 py-3 mx-auto px-4 h-15 w-[90%] max-w-4xl dark:bg-[#2C2125]/40 bg-white/60 backdrop-blur-md rounded-xl z-50">
+    <div className="top-4 border left-4 right-4 py-3 mx-auto px-4 h-15 w-[90%] max-w-4xl dark:bg-[#2C2125]/40 bg-white/60 backdrop-blur-md rounded-xl z-50">
         <div className="flex justify-between">
           <div className="flex justify-center items-center cursor-pointer gap-3">
             <motion.a href="https://ashishxjha.vercel.app" onHoverStart={() => {new Audio('/hover.mp3').play()}} whileHover={{ rotate: -360, scale: 1.15 }} transition={{ duration: 0.7 }}>
