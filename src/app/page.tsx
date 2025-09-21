@@ -22,12 +22,3 @@ function Home() {
 }
 
 export default Home
-
-// const playSound = () => new Audio("/hover.mp3").play();
-
-// <SimpleTooltip content={label}>
-//       <div onMouseEnter={playSound} className="cursor-pointer flex items-center justify-center">
-//         {children}
-//       </div>
-//     </SimpleTooltip>
-// import { SimpleTooltip } from "@/components/ui/tooltip";
