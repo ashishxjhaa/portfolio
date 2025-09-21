@@ -11,7 +11,7 @@ function About() {
   return (
     <>
     <BookCall />
-    <div className="flex justify-between mx-auto pt-25 w-[85%] max-w-4xl">
+    <div className="flex justify-between mx-auto pt-10 w-[85%] max-w-4xl">
      <a href="mailto:ashishxyzjha@gmail.com" className="cursor-pointer w-fit h-fit flex items-center gap-5">
        <Mail className="w-4 sm:w-6 h-4 sm:h-6 text-[#4F47E5]" />
        <span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />

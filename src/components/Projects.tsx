@@ -14,7 +14,7 @@ function Projects() {
       </div>
       <div className="w-[90%] mt-10 border dark:border-white/30 border-black/30 rounded-md px-4 py-10 max-w-3xl mx-auto">
         
-        <div className="flex py-2 pb-3 place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
+        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
           <div>
             <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/projectfunding.png" width={565} height={275} alt="ProjectFunding Preview" />
           </div>
@@ -45,7 +45,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="flex py-2 pb-3 place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
+        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
           <div>
             <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/reportpiracy.png" width={565} height={275} alt="ReportPiracy Preview" />
           </div>
@@ -76,7 +76,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="flex py-2 pb-3 place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
+        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
           <div>
             <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/agently.png" width={565} height={275} alt="Agently Preview" />
           </div>
@@ -107,7 +107,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="flex py-2 pb-3 place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
+        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
           <div>
             <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/ziya.png" width={565} height={275} alt="Ziya Preview" />
           </div>
@@ -138,7 +138,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="flex py-2 pb-3 place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
+        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
           <div>
             <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/savetube.png" width={565} height={275} alt="SaveTube Preview" />
           </div>
