@@ -3,7 +3,7 @@
 function Techskill() {
   return (
     <div className="pt-15 px-4">
-      <div className="mt-10 relative border border-gray-500 rounded-xl p-8 pt-10 w-[75%] max-w-3xl mx-auto">
+      <div className="mt-10 relative border border-gray-500 rounded-xl p-8 pt-10 w-[90%] max-w-3xl mx-auto">
         <span className="absolute -top-4 left-6 dark:bg-black bg-gray-200 px-3 text-lg font-semibold dark:text-white text-black">Tech Stack</span>
         <div className="flex flex-wrap gap-2">
           <TechIcon label="React"></TechIcon>
