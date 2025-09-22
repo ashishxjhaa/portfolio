@@ -48,7 +48,7 @@ function About() {
 
         <div className="flex gap-8 px-4">
           <div className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full dark:bg-white bg-gray-200 hover:bg-gray-200 dark:hover:bg-white/90 w-fit h-fit px-6 py-3 mt-10">
-            <a href="https://drive.google.com/file/d/1Ncqs8Zu-JHMWnibbNtgmfH-rJmsIkl4m/view?usp=sharing" target="_blank" className="font-medium text-md tracking-wide text-black dark:text-black" onClick={() => new Audio('/switchtab.mp3').play()}>View Resume</a>
+            <a href="https://drive.google.com/file/d/1OV5QkIyaTj350iWdeGrlwyIQ1WfQKmQh/view?usp=sharing" target="_blank" className="font-medium text-md tracking-wide text-black dark:text-black" onClick={() => new Audio('/switchtab.mp3').play()}>View Resume</a>
           </div>
           
           <div data-cal-namespace="quick-chat" data-cal-link="ashishxjha/quickchat" data-cal-config='{"layout":"month_view"}' className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full bg-[#4F47E5] hover:bg-[#4F47E5]/90 w-fit h-fit px-6 py-3 mt-10">
