@@ -1,19 +1,17 @@
-"use client"
+'use client'
 
-import About from "@/components/About"
-import Contact from "@/components/Contact"
-import Education from "@/components/Education"
-import Navbar from "@/components/Navbar"
-import Projects from "@/components/Projects"
-import Techskill from "@/components/Techskill"
+import About from '@/components/About'
+import Contact from '@/components/Contact'
+import Education from '@/components/Education'
+import Navbar from '@/components/Navbar'
+import Projects from '@/components/Projects'
 
 function Home() {
 
   return (
-    <div className="dark:bg-neutral-900 bg-white pt-4 overflow-x-hidden">
+    <div className='dark:bg-neutral-900 bg-white pt-4 overflow-x-hidden'>
       <Navbar />
       <About />
-      <Techskill />
       <Projects />
       <Education />
       <Contact />

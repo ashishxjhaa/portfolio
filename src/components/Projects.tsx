@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { IoIosLink, IoLogoGithub } from "react-icons/io";
-import { SimpleTooltip } from "./ui/tooltip";
+import { IoIosLink, IoLogoGithub } from "react-icons/io"
+import { SimpleTooltip } from "./ui/tooltip"
 
 function Projects() {
 
@@ -10,9 +10,8 @@ function Projects() {
     <div className="py-20">
       <div className="px-10 sm:px-20 dark:text-white text-black max-w-3xl mx-auto">
         <div className="text-2xl sm:text-3xl font-medium tracking-tight leading-normal">Projects</div>
-        <div className="text-sm opacity-70">Selected work featuring full-stack apps, UI polish, and performance.</div>
       </div>
-      <div className="w-[90%] mt-10 border dark:border-white/30 border-black/30 rounded-md px-4 py-10 max-w-3xl mx-auto">
+      <div className="w-[90%] mt-10 max-w-3xl mx-auto">
         
         <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
           <div>
@@ -20,7 +19,7 @@ function Projects() {
           </div>
           <div className="flex flex-col sm:flex-row gap-8">
           <div className="flex flex-col gap-3 dark:text-white text-black">
-            <div className="text-md font-medium">Project Funding</div>
+            <div className="text-md font-medium">Back It</div>
             <div className="text-sm opacity-70 w-[70%] sm:w-full max-w-xs">A Website for raise funds.</div>
             <div className="gap-2 hidden md:block">
               <div className="flex gap-2 dark:text-slate-300 text-neutral-800 whitespace-nowrap">
@@ -32,12 +31,12 @@ function Projects() {
           </div>
           <div className="flex py-2 gap-6 lg:pl-10 overflow-hidden flex-shrink-0 pr-8">
             <SimpleTooltip content="Open Project Link">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://projectfunding.vercel.app'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
+            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://back-it-two.vercel.app'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
               <IoIosLink size={25} />
             </a>
             </SimpleTooltip>
             <SimpleTooltip content="View Source Code">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/Project-Funding'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
+            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/BackIt'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
               <IoLogoGithub size={25} />
             </a>
             </SimpleTooltip>
