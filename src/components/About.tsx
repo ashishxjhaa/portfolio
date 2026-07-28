@@ -34,12 +34,12 @@ function About() {
           About
         </h2>
         <p className="text-md dark:text-white/85 text-black/85 font-sans">
-          Hi, I'm Ashish Jha — a Full-Stack Developer who builds fast, scalable
+          {`Hi, I'm Ashish Jha — a Full-Stack Developer who builds fast, scalable
           applications from idea to deployment. I work primarily with Next.js,
           React, TypeScript, and Express.js on the frontend and backend, and
           Prisma with PostgreSQL for data. I care about clean, maintainable code
           as much as clean, intuitive UI — and I like shipping things that
-          actually get used.
+          actually get used.`}
         </p>
       </div>
 
