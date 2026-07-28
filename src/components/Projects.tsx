@@ -1,176 +1,109 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { IoIosLink, IoLogoGithub } from "react-icons/io"
-import { SimpleTooltip } from "./ui/tooltip"
+import { IoIosLink, IoLogoGithub } from "react-icons/io";
+import { SimpleTooltip } from "./ui/tooltip";
+
+const projects = [
+  {
+    title: "Back It",
+    description:
+      "A crowdfunding platform where people can create campaigns and raise funds for causes and ideas.",
+    liveUrl: "https://back-it-two.vercel.app",
+    githubUrl: "https://github.com/ashishxjhaa/BackIt",
+  },
+  {
+    title: "Rize Plus",
+    description:
+      "An AI resume roaster — upload your resume and get instant, brutally honest feedback on it.",
+    liveUrl: "https://rizeplus.vercel.app",
+    githubUrl: "https://github.com/ashishxjhaa/rizeplus",
+  },
+  {
+    title: "Listform",
+    description:
+      "An embeddable widget builder for collecting feedback, bug reports, surveys, NPS, and waitlists on any website.",
+    liveUrl: "https://listform-web.vercel.app",
+    githubUrl: "https://github.com/ashishxjhaa/listform-web",
+  },
+  {
+    title: "Echo",
+    description:
+      "A real-time chat app where users sign in and message each other across ongoing conversations.",
+    liveUrl: "https://echo-chatt.vercel.app",
+    githubUrl: "https://github.com/ashishxjhaa/echo-chatt",
+  },
+  {
+    title: "Lens",
+    description:
+      "A web-based, read-only crypto wallet for checking balances and activity without holding your keys.",
+    liveUrl: "https://lens-wallet.vercel.app",
+    githubUrl: "https://github.com/ashishxjhaa/lens",
+  },
+  {
+    title: "iVision",
+    description:
+      "An Apple-inspired interactive landing page with scroll-driven animation and 3D visuals.",
+    liveUrl: "https://i-vision-nu.vercel.app",
+    githubUrl: "https://github.com/ashishxjhaa/i-vision",
+  },
+  {
+    title: "Ziya",
+    description: "Just the landing page of a modern, animated website design.",
+    liveUrl: "https://ziya-nine.vercel.app",
+    githubUrl: "https://github.com/ashishxjhaa/ziya",
+  },
+];
 
 function Projects() {
-
   return (
     <div className="py-20">
-      <div className="px-10 sm:px-20 dark:text-white text-black max-w-3xl mx-auto">
-        <div className="text-2xl sm:text-3xl font-medium tracking-tight leading-normal">Projects</div>
-      </div>
-      <div className="w-[90%] mt-10 max-w-3xl mx-auto">
-        
-        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
-          <div>
-            <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/projectfunding.png" width={565} height={275} alt="ProjectFunding Preview" />
-          </div>
-          <div className="flex flex-col sm:flex-row gap-8">
-          <div className="flex flex-col gap-3 dark:text-white text-black">
-            <div className="text-md font-medium">Back It</div>
-            <div className="text-sm opacity-70 w-[70%] sm:w-full max-w-xs">A Website for raise funds.</div>
-            <div className="gap-2 hidden md:block">
-              <div className="flex gap-2 dark:text-slate-300 text-neutral-800 whitespace-nowrap">
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Next.js</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Typescript</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Tailwind CSS</div>
-              </div>
-            </div>
-          </div>
-          <div className="flex py-2 gap-6 lg:pl-10 overflow-hidden flex-shrink-0 pr-8">
-            <SimpleTooltip content="Open Project Link">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://back-it-two.vercel.app'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoIosLink size={25} />
-            </a>
-            </SimpleTooltip>
-            <SimpleTooltip content="View Source Code">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/BackIt'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoLogoGithub size={25} />
-            </a>
-            </SimpleTooltip>
-          </div>
-          </div>
-        </div>
-
-        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
-          <div>
-            <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/reportpiracy.png" width={565} height={275} alt="ReportPiracy Preview" />
-          </div>
-          <div className="flex flex-col sm:flex-row gap-8">
-          <div className="flex flex-col gap-3 dark:text-white text-black">
-            <div className="text-md font-medium">Report Piracy</div>
-            <div className="text-sm opacity-70 w-[70%] sm:w-full max-w-xs">Users can report pirated content.</div>
-            <div className="gap-2 hidden md:block">
-              <div className="flex gap-2 dark:text-slate-300 text-neutral-800 whitespace-nowrap">
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">React.js</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Tailwind CSS</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Express</div>
-              </div>
-            </div>
-          </div>
-          <div className="flex py-2 gap-6 lg:pl-10 overflow-hidden flex-shrink-0 pr-8">
-            <SimpleTooltip content="Open Project Link">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://reportpiracy.vercel.app'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoIosLink size={25} />
-            </a>
-            </SimpleTooltip>
-            <SimpleTooltip content="View Source Code">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/Report-Piracy'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoLogoGithub size={25} />
-            </a>
-            </SimpleTooltip>
-          </div>
-          </div>
-        </div>
-
-        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
-          <div>
-            <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/agently.png" width={565} height={275} alt="Agently Preview" />
-          </div>
-          <div className="flex flex-col sm:flex-row gap-8">
-          <div className="flex flex-col gap-3 dark:text-white text-black">
-            <div className="text-md font-medium">Agently</div>
-            <div className="text-sm opacity-70 w-[70%] sm:w-full max-w-xs">Create agent and assign task via lists.</div>
-            <div className="gap-2 hidden md:block">
-              <div className="flex gap-2 dark:text-slate-300 text-neutral-800 whitespace-nowrap">
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">React.js</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Javascript</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Express</div>
-              </div>
-            </div>
-          </div>
-          <div className="flex py-2 gap-6 lg:pl-10 overflow-hidden flex-shrink-0 pr-8">
-            <SimpleTooltip content="Open Project Link">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://agently-sable.vercel.app'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoIosLink size={25} />
-            </a>
-            </SimpleTooltip>
-            <SimpleTooltip content="View Source Code">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/agently'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoLogoGithub size={25} />
-            </a>
-            </SimpleTooltip>
-          </div>
-          </div>
-        </div>
-
-        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
-          <div>
-            <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/ziya.png" width={565} height={275} alt="Ziya Preview" />
-          </div>
-          <div className="flex flex-col sm:flex-row gap-8">
-          <div className="flex flex-col gap-3 dark:text-white text-black">
-            <div className="text-md font-medium">Ziya</div>
-            <div className="text-sm opacity-70 w-[70%] sm:w-full max-w-xs">Just landing page of modern website.</div>
-            <div className="gap-2 hidden md:block">
-              <div className="flex gap-2 dark:text-slate-300 text-neutral-800 whitespace-nowrap">
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Next.js</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Typescript</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Tailwind CSS</div>
-              </div>
-            </div>
-          </div>
-          <div className="flex py-2 gap-6 lg:pl-10 overflow-hidden flex-shrink-0 pr-8">
-            <SimpleTooltip content="Open Project Link">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://ziya-nine.vercel.app'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoIosLink size={25} />
-            </a>
-            </SimpleTooltip>
-            <SimpleTooltip content="View Source Code">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/ziya'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoLogoGithub size={25} />
-            </a>
-            </SimpleTooltip>
-          </div>
-          </div>
-        </div>
-
-        <div className="flex py-2 pb-3 sm:place-items-center dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full sm:px-10 gap-4 sm:gap-10 mx-auto overflow-hidden">
-          <div>
-            <Image className="px-2 pt-2.5 max-w-[150px] w-[150px] h-[90px] rounded-xl [object-position:0_-13px] object-cover" src="/savetube.png" width={565} height={275} alt="SaveTube Preview" />
-          </div>
-          <div className="flex flex-col sm:flex-row gap-8">
-          <div className="flex flex-col gap-3 dark:text-white text-black">
-            <div className="text-md font-medium">Save Tube</div>
-            <div className="text-sm opacity-70 w-[70%] sm:w-full max-w-xs">You can download youtube video.</div>
-            <div className="gap-2 hidden md:block">
-              <div className="flex gap-2 dark:text-slate-300 text-neutral-800 whitespace-nowrap">
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Next.js</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Typescript</div>
-                <div className="text-xs sm:text-sm rounded-full dark:bg-[#262626] bg-gray-300 w-fit h-fit px-2 sm:px-3 py-1">Tailwind CSS</div>
-              </div>
-            </div>
-          </div>
-          <div className="flex py-2 gap-6 lg:pl-10 overflow-hidden flex-shrink-0 pr-8">
-            <SimpleTooltip content="Open Project Link">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://savetube.vercel.app'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoIosLink size={25} />
-            </a>
-            </SimpleTooltip>
-            <SimpleTooltip content="View Source Code">
-            <a onClick={() => new Audio('/switchtab.mp3').play()} href={'https://github.com/ashishxjhaa/SaveTube'} target="_blank" rel="noopener noreferrer" className="flex items-center dark:text-white text-black lg:px-3 lg:py-1.5 cursor-pointer">
-              <IoLogoGithub size={25} />
-            </a>
-            </SimpleTooltip>
-          </div>
-          </div>
+      <div className="px-10 sm:px-20 dark:text-white text-black max-w-4xl mx-auto">
+        <div className="text-2xl sm:text-3xl font-medium tracking-tight leading-normal">
+          Projects
         </div>
       </div>
+      <div className="w-[90%] mt-10 max-w-3xl mx-auto flex flex-col gap-3">
+        {projects.map((project) => (
+          <div
+            key={project.title}
+            className="flex items-center justify-between dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full px-6 sm:px-10 py-5 gap-4 sm:gap-10 mx-auto"
+          >
+            <div className="flex flex-col gap-3 dark:text-white text-black">
+              <div className="text-md font-medium">{project.title}</div>
+              <div className="text-sm opacity-70 max-w-xs">
+                {project.description}
+              </div>
+            </div>
 
+            <div className="flex gap-6 flex-shrink-0">
+              <SimpleTooltip content="Open Project Link">
+                <a
+                  onClick={() => new Audio("/switchtab.mp3").play()}
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center dark:text-white text-black cursor-pointer"
+                >
+                  <IoIosLink size={25} />
+                </a>
+              </SimpleTooltip>
+              <SimpleTooltip content="View Source Code">
+                <a
+                  onClick={() => new Audio("/switchtab.mp3").play()}
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center dark:text-white text-black cursor-pointer"
+                >
+                  <IoLogoGithub size={25} />
+                </a>
+              </SimpleTooltip>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

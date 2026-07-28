@@ -1,20 +1,59 @@
+"use client";
 
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+
+const experiences = [
+  {
+    company: "Betterstacks",
+    role: "Full Stack Web Developer",
+    duration: "Oct 2025 - Jan 2026",
+    link: "https://betterstacks.com",
+    description:
+      "Built the AI resume roaster feature end-to-end along with an analytics dashboard for tracking usage and engagement. Also shipped a QR code generator tied to user profiles and an AI voice calling system that auto-fills profiles from a call, plus various frontend fixes and polish across the platform.",
+  },
+];
 
 function Experience() {
-
   return (
-    <div className="mx-auto py-20">
-      <div className="text-5xl max-sm:text-3xl max-md:text-4xl font-bold tracking-tight leading-normal text-center bg-gradient-to-b from-[#DDFE9C]/90 to-[#DDFE9C] bg-clip-text dark:text-transparent text-black">
-        Experience
-      </div>
-      <div onMouseEnter={() => new Audio('/shock.mp3').play()} className="relative mt-10 w-fit mx-8 sm:mx-auto px-4 border-1 border-gray-700 dark:hover:border-[#DDFE9C]/80 hover:border-red-500 rounded-xl cursor-pointer hover:scale-105 transition-all duration-500 delay-75">
-        <span className="absolute -top-4 left-6 dark:bg-black bg-gray-200 px-3 text-lg font-semibold dark:text-gray-200 text-neutral-700">Experience</span>
-        <div className="py-10 text-center">
-        <div className="font-bold font-mono dark:text-white text-black">Currently no experience not even any freelance work.</div>
+    <div className="pt-20">
+      <div className="px-10 sm:px-20 dark:text-white text-black max-w-4xl mx-auto">
+        <div className="text-2xl sm:text-4xl font-medium tracking-tight leading-normal">
+          Experience
         </div>
       </div>
+      <div className="w-[90%] mt-10 max-w-3xl mx-auto flex flex-col gap-3">
+        {experiences.map((exp) => (
+          <a
+            key={exp.company}
+            onClick={() => new Audio("/switchtab.mp3").play()}
+            href={exp.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-4 sm:gap-6 dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full px-6 sm:px-10 py-5 group"
+          >
+            <div className="flex justify-between items-start w-full">
+              <div className="flex flex-col gap-1.5">
+                <div className="flex place-items-center gap-2 text-md font-medium dark:text-white text-black">
+                  <span className="text-sm">{exp.company}</span>
+                  <span className="opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-6 transition-all duration-450">
+                    <MdKeyboardDoubleArrowRight />
+                  </span>
+                </div>
+                <div className="text-xs sm:text-sm dark:text-white/85 text-black/85">
+                  {exp.role}
+                </div>
+                <div className="text-sm max-w-xs mt-3 dark:text-white/70 text-black/70">
+                  {exp.description}
+                </div>
+              </div>
+              <div className="opacity-75 dark:text-gray-300 text-neutral-700 whitespace-nowrap text-xs sm:text-md">
+                {exp.duration}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
-
-export default Experience
+export default Experience;

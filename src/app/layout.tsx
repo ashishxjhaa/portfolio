@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "sonner"
+import { Toaster } from "sonner";
 import { SplashLayout } from "@/components/SplashLayout";
 import { AnimatedLayout } from "@/components/AnimatedLayout";
 import { ThemeProvider } from "next-themes";
@@ -20,8 +20,7 @@ export const metadata: Metadata = {
   title: "Ashish Jha",
   description: "This is my portfolio website",
   icons: {
-    icon: "/logo.jpg"
-
+    icon: "/logo.jpg",
   },
 };
 
