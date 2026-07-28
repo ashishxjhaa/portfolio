@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import logo from "/public/logo.png";
+
 
 export function SplashScreen() {
   return (
@@ -22,7 +22,14 @@ export function SplashScreen() {
           ease: [0.08,0.82,0.17,1],
         }}
       >
-        <Image src={logo} alt="ziya" className="size-24" priority />
+        <Image
+          src="/logo.png"
+          alt="ashish"
+          width={96}
+          height={96}
+          priority
+          className="size-24"
+        />
       </motion.div>
     </motion.div>
   );
