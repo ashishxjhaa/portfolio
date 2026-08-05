@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/Ashish-resume.pdf",
+      "destination": "/Ashish_Jha_Resume.pdf",
+      "permanent": false
+    }
+  ]
+}

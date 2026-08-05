@@ -48,7 +48,7 @@ function About() {
           <div className="flex gap-8 px-4">
             <div className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full dark:bg-white bg-gray-200 hover:bg-gray-200 dark:hover:bg-white/90 w-fit h-fit px-4 py-1.5">
               <a
-                href="/Ashish-resume.pdf"
+                href="/Ashish_Jha_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-md tracking-wide text-black dark:text-black"
