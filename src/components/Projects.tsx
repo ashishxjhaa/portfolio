@@ -7,9 +7,16 @@ const projects = [
   {
     title: "Back It",
     description:
-      "A crowdfunding platform where people can create campaigns and raise funds for causes and ideas.",
+      "A product launch platform where developers list projects, get discovered, and grow through community upvotes, hearts, and saves.",
     liveUrl: "https://back-it-two.vercel.app",
     githubUrl: "https://github.com/ashishxjhaa/BackIt",
+  },
+  {
+    title: "Echo",
+    description:
+      "An AI-powered customer support platform — embed a chat widget, train it on your docs, and take over from an operator inbox when needed.",
+    liveUrl: "https://echo-chatt.vercel.app",
+    githubUrl: "https://github.com/ashishxjhaa/echo-chatt",
   },
   {
     title: "Rize Plus",
@@ -24,13 +31,6 @@ const projects = [
       "An embeddable widget builder for collecting feedback, bug reports, surveys, NPS, and waitlists on any website.",
     liveUrl: "https://listform-web.vercel.app",
     githubUrl: "https://github.com/ashishxjhaa/listform-web",
-  },
-  {
-    title: "Echo",
-    description:
-      "A real-time chat app where users sign in and message each other across ongoing conversations.",
-    liveUrl: "https://echo-chatt.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/echo-chatt",
   },
   {
     title: "Lens",

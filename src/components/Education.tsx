@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import { GraduationCap } from "lucide-react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Education() {
@@ -19,14 +19,11 @@ function Education() {
           rel="noopener noreferrer"
           className="flex items-center gap-4 sm:gap-6 dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full px-6 sm:px-10 py-5 group"
         >
-          <div>
-            <Image
-              src="/shooliniuniversity.jpeg"
-              width={100}
-              height={100}
-              alt="University"
-              className="w-10 h-10 sm:w-13 sm:h-13 rounded-full object-cover border"
-            />
+          <div
+            aria-hidden="true"
+            className="flex w-10 h-10 sm:w-13 sm:h-13 items-center justify-center rounded-full border dark:bg-neutral-800 bg-gray-100 dark:text-white/80 text-black/70"
+          >
+            <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
           <div className="flex justify-between items-center w-full">
             <div>
