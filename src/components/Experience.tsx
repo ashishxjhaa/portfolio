@@ -1,13 +1,10 @@
 "use client";
 
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-
 const experiences = [
   {
     company: "Betterstacks",
     role: "Full Stack Web Developer",
     duration: "Oct 2025 - Jan 2026",
-    link: "https://betterstacks.com",
     description:
       "Built the AI resume roaster feature end-to-end along with an analytics dashboard for tracking usage and engagement. Also shipped a QR code generator tied to user profiles and an AI voice calling system that auto-fills profiles from a call, plus various frontend fixes and polish across the platform.",
   },
@@ -23,21 +20,14 @@ function Experience() {
       </div>
       <div className="w-[90%] mt-10 max-w-3xl mx-auto flex flex-col gap-3">
         {experiences.map((exp) => (
-          <a
+          <div
             key={exp.company}
-            onClick={() => new Audio("/switchtab.mp3").play()}
-            href={exp.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 sm:gap-6 dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 cursor-pointer rounded-md w-full px-6 sm:px-10 py-5 group"
+            className="flex items-center gap-4 sm:gap-6 dark:bg-black/30 bg-white rounded-md w-full px-6 sm:px-10 py-5"
           >
             <div className="flex justify-between items-start w-full">
               <div className="flex flex-col gap-1.5">
-                <div className="flex place-items-center gap-2 text-md font-medium dark:text-white text-black">
+                <div className="text-md font-medium dark:text-white text-black">
                   <span className="text-sm">{exp.company}</span>
-                  <span className="opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-6 transition-all duration-450">
-                    <MdKeyboardDoubleArrowRight />
-                  </span>
                 </div>
                 <div className="text-xs sm:text-sm dark:text-white/85 text-black/85">
                   {exp.role}
@@ -50,7 +40,7 @@ function Experience() {
                 {exp.duration}
               </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </div>

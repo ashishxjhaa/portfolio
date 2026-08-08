@@ -16,7 +16,7 @@ const projects = [
     description:
       "An AI-powered customer support platform — embed a chat widget, train it on your docs, and take over from an operator inbox when needed.",
     liveUrl: "https://echo-chatt.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/echo-chatt",
+    githubUrl: "https://github.com/ashishxjhaa/Echo",
   },
   {
     title: "Rize Plus",
@@ -26,31 +26,11 @@ const projects = [
     githubUrl: "https://github.com/ashishxjhaa/rizeplus",
   },
   {
-    title: "Listform",
-    description:
-      "An embeddable widget builder for collecting feedback, bug reports, surveys, NPS, and waitlists on any website.",
-    liveUrl: "https://listform-web.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/listform-web",
-  },
-  {
     title: "Lens",
     description:
       "A web-based, read-only crypto wallet for checking balances and activity without holding your keys.",
     liveUrl: "https://lens-wallet.vercel.app",
     githubUrl: "https://github.com/ashishxjhaa/lens",
-  },
-  {
-    title: "iVision",
-    description:
-      "An Apple-inspired interactive landing page with scroll-driven animation and 3D visuals.",
-    liveUrl: "https://i-vision-nu.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/i-vision",
-  },
-  {
-    title: "Ziya",
-    description: "Just the landing page of a modern, animated website design.",
-    liveUrl: "https://ziya-nine.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/ziya",
   },
 ];
 

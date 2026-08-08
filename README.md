@@ -26,7 +26,7 @@ This repo is the source for my personal portfolio at [ashishxjha.vercel.app](htt
 
 - **About** — intro, resume download, and Cal.com booking
 - **Experience** — work history with company links
-- **Projects** — 7 featured builds with live demos and GitHub repos
+- **Projects** — 4 featured builds with live demos and GitHub repos
 - **Education** — degree and institution
 
 ---
@@ -46,12 +46,9 @@ This repo is the source for my personal portfolio at [ashishxjha.vercel.app](htt
 | Project | Description | Links |
 |---------|-------------|-------|
 | **Back It** | Product launch platform — developers list projects, get discovered, and grow through community upvotes, hearts, and saves | [Live](https://back-it-two.vercel.app) · [GitHub](https://github.com/ashishxjhaa/BackIt) |
-| **Echo** | AI-powered customer support — embed a chat widget, train it on your docs, and take over from an operator inbox when needed | [Live](https://echo-chatt.vercel.app) · [GitHub](https://github.com/ashishxjhaa/echo-chatt) |
+| **Echo** | AI-powered customer support — embed a chat widget, train it on your docs, and take over from an operator inbox when needed | [Live](https://echo-chatt.vercel.app) · [GitHub](https://github.com/ashishxjhaa/Echo) |
 | **Rize Plus** | AI resume roaster — upload your resume and get instant, brutally honest feedback on it | [Live](https://rizeplus.vercel.app) · [GitHub](https://github.com/ashishxjhaa/rizeplus) |
-| **Listform** | Embeddable widget builder for collecting feedback, bug reports, surveys, NPS, and waitlists on any website | [Live](https://listform-web.vercel.app) · [GitHub](https://github.com/ashishxjhaa/listform-web) |
 | **Lens** | Web-based, read-only crypto wallet for checking balances and activity without holding your keys | [Live](https://lens-wallet.vercel.app) · [GitHub](https://github.com/ashishxjhaa/lens) |
-| **iVision** | Apple-inspired interactive landing page with scroll-driven animation and 3D visuals | [Live](https://i-vision-nu.vercel.app) · [GitHub](https://github.com/ashishxjhaa/i-vision) |
-| **Ziya** | Modern, animated website landing page design | [Live](https://ziya-nine.vercel.app) · [GitHub](https://github.com/ashishxjhaa/ziya) |
 
 ---
 

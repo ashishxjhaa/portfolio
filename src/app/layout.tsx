@@ -4,7 +4,8 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import { SplashLayout } from "@/components/SplashLayout";
 import { AnimatedLayout } from "@/components/AnimatedLayout";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@teispace/next-themes";
+import { getTheme, getThemeScript } from "@teispace/next-themes/server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,24 +25,41 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialTheme = await getTheme();
+  const themeScript = getThemeScript({
+    attribute: "class",
+    defaultTheme: "system",
+    enableSystem: true,
+    initialTheme: initialTheme ?? undefined,
+  });
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SplashLayout>
-          <AnimatedLayout>
-            <ThemeProvider attribute="class" defaultTheme="system">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          initialTheme={initialTheme ?? undefined}
+          noScript
+        >
+          <SplashLayout>
+            <AnimatedLayout>
               {children}
               <Toaster position="bottom-right" theme="dark" />
-            </ThemeProvider>
-          </AnimatedLayout>
-        </SplashLayout>
+            </AnimatedLayout>
+          </SplashLayout>
+        </ThemeProvider>
       </body>
     </html>
   );
