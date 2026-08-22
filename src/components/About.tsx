@@ -34,12 +34,17 @@ function About() {
           About
         </h2>
         <p className="text-md dark:text-white/85 text-black/85 font-sans">
-          {`Hi, I'm Ashish Jha — a Full-Stack Developer who builds fast, scalable
-          applications from idea to deployment. I work primarily with Next.js,
-          React, TypeScript, and Express.js on the frontend and backend, and
-          Prisma with PostgreSQL for data. I care about clean, maintainable code
-          as much as clean, intuitive UI — and I like shipping things that
-          actually get used.`}
+          I&apos;m Ashish Jha — a{" "}
+          <span className="font-semibold text-[#ff5800]">
+            Full-Stack AI Engineer
+          </span>{" "}
+          who builds production web products with intelligence baked in. I ship
+          end-to-end systems with Next.js, React, TypeScript, and Node.js, and I
+          work deeply with LLMs, RAG pipelines, embeddings, and agentic workflows
+          when the product needs more than a static UI.
+        </p>
+        <p className="text-md dark:text-white/85 text-black/85 font-sans">
+          {`My strength is turning ambiguous ideas into reliable software — clean architecture, thoughtful UX, and systems that hold up beyond the demo. I care about performance, maintainability, and shipping work that people actually use.`}
         </p>
       </div>
 

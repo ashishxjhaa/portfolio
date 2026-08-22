@@ -5,6 +5,13 @@ import { SimpleTooltip } from "./ui/tooltip";
 
 const projects = [
   {
+    title: "Zuno",
+    description:
+      "Chat-only AI website builder — describe a site, get a live Vite + React + TypeScript preview, then iterate entirely through conversation.",
+    liveUrl: "https://zuno-web.vercel.app/",
+    githubUrl: "https://github.com/ashishxjhaa/Zuno",
+  },
+  {
     title: "Back It",
     description:
       "A product launch platform where developers list projects, get discovered, and grow through community upvotes, hearts, and saves.",
@@ -18,25 +25,11 @@ const projects = [
     liveUrl: "https://echo-chatt.vercel.app",
     githubUrl: "https://github.com/ashishxjhaa/Echo",
   },
-  {
-    title: "Rize Plus",
-    description:
-      "An AI resume roaster — upload your resume and get instant, brutally honest feedback on it.",
-    liveUrl: "https://rizeplus.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/rizeplus",
-  },
-  {
-    title: "Lens",
-    description:
-      "A web-based, read-only crypto wallet for checking balances and activity without holding your keys.",
-    liveUrl: "https://lens-wallet.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/lens",
-  },
 ];
 
 function Projects() {
   return (
-    <div className="py-20">
+    <div className="pt-20">
       <div className="px-10 sm:px-20 dark:text-white text-black max-w-4xl mx-auto">
         <div className="text-2xl sm:text-3xl font-medium tracking-tight leading-normal">
           Projects
