@@ -5,11 +5,20 @@ const experiences = [
     company: "Betterstacks",
     role: "Software Development Intern",
     duration: "Jun 2026 - Aug 2026",
+    highlights: [
+      "Built an AI resume-roaster end-to-end: product flow, LLM integration, and usage analytics",
+      "Shipped a QR profile generator and AI voice-calling system that auto-fills profiles from live calls",
+      "Hardened frontend quality across the platform: layout, responsiveness, and component polish",
+    ],
   },
   {
     company: "Betterstacks",
     role: "Full Stack Web Developer",
     duration: "Oct 2025 - Jan 2026",
+    highlights: [
+      "Owned delivery of production features across frontend and backend in a live SaaS environment",
+      "Shipped reliable user-facing work under real release pressure with strong UX polish",
+    ],
   },
 ];
 
@@ -25,9 +34,9 @@ function Experience() {
         {experiences.map((exp) => (
           <div
             key={`${exp.company}-${exp.role}`}
-            className="flex items-center gap-4 sm:gap-6 dark:bg-black/30 bg-white rounded-md w-full px-6 sm:px-10 py-5"
+            className="dark:bg-black/30 bg-white rounded-md w-full px-6 sm:px-10 py-5"
           >
-            <div className="flex justify-between items-start w-full">
+            <div className="flex justify-between items-start w-full gap-4">
               <div className="flex flex-col gap-1.5">
                 <div className="text-md font-medium dark:text-white text-black">
                   <span className="text-sm">{exp.company}</span>
@@ -40,6 +49,16 @@ function Experience() {
                 {exp.duration}
               </div>
             </div>
+            <ul className="mt-3 flex flex-col gap-1.5 list-disc pl-4">
+              {exp.highlights.map((item) => (
+                <li
+                  key={item}
+                  className="text-xs sm:text-sm dark:text-white/70 text-black/70 leading-relaxed"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
