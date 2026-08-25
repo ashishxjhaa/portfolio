@@ -12,7 +12,7 @@ function About() {
           href="mailto:ashishxyzjha@gmail.com"
           className="cursor-pointer w-fit h-fit flex items-center gap-5"
         >
-          <Mail className="w-4 sm:w-6 h-4 sm:h-6 text-[#4F47E5]" />
+          <Mail className="w-4 sm:w-6 h-4 sm:h-6 text-[#ff5800]" />
           <span className="h-1 w-1 rounded-full dark:bg-slate-400 bg-neutral-700" />
           <div className="text-sm opacity-75 dark:text-white text-black underline underline-offset-4">
             ashishxyzjha@gmail.com
@@ -34,17 +34,18 @@ function About() {
           About
         </h2>
         <p className="text-md dark:text-white/85 text-black/85 font-sans">
-          I&apos;m Ashish Jha — a{" "}
+          I&apos;m a{" "}
           <span className="font-semibold text-[#ff5800]">
             Full-Stack AI Engineer
-          </span>{" "}
-          who builds production web products with intelligence baked in. I ship
-          end-to-end systems with Next.js, React, TypeScript, and Node.js, and I
-          work deeply with LLMs, RAG pipelines, embeddings, and agentic workflows
-          when the product needs more than a static UI.
+          </span>
+          , a developer who enjoys building things. I&apos;ve worked on a mix of
+          AI products, developer tools, and web applications, both during my
+          internship at Betterstacks and through projects of my own.
         </p>
         <p className="text-md dark:text-white/85 text-black/85 font-sans">
-          {`My strength is turning ambiguous ideas into reliable software — clean architecture, thoughtful UX, and systems that hold up beyond the demo. I care about performance, maintainability, and shipping work that people actually use.`}
+          I like taking an idea from something rough to something people can
+          actually use. Most of what I&apos;ve learned has come from building,
+          breaking things, fixing them, and figuring things out along the way.
         </p>
       </div>
 
@@ -66,7 +67,7 @@ function About() {
               data-cal-namespace="quick-chat"
               data-cal-link="ashishxjha/quickchat"
               data-cal-config='{"layout":"month_view"}'
-              className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full bg-[#4F47E5] hover:bg-[#4F47E5]/90 w-fit h-fit px-4 py-1.5"
+              className="my-4 flex items-center justify-center gap-2 cursor-pointer rounded-full bg-[#ff5800] hover:bg-[#ff5800]/90 w-fit h-fit px-4 py-1.5"
             >
               <div className="font-medium text-md tracking-wide text-white">
                 Book a call

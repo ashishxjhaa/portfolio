@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Zuno",
     description:
-      "Chat-only AI website builder — describe a site, get a live Vite + React + TypeScript preview, then iterate entirely through conversation.",
+      "Chat-only AI website builder: describe a site, get a live Vite + React + TypeScript preview, then iterate entirely through conversation.",
     liveUrl: "https://zuno-web.vercel.app/",
     githubUrl: "https://github.com/ashishxjhaa/Zuno",
   },
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Echo",
     description:
-      "An AI-powered customer support platform — embed a chat widget, train it on your docs, and take over from an operator inbox when needed.",
+      "An AI-powered customer support platform: embed a chat widget, train it on your docs, and take over from an operator inbox when needed.",
     liveUrl: "https://echo-chatt.vercel.app",
     githubUrl: "https://github.com/ashishxjhaa/Echo",
   },

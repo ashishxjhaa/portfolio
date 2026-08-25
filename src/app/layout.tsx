@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ashish Jha — Full-Stack AI Engineer",
+  title: "Ashish Jha | Full-Stack AI Engineer",
   description:
-    "Ashish Jha — Full-Stack AI Engineer building production web products and applied AI systems.",
+    "Ashish Jha, Full-Stack AI Engineer building production web products and applied AI systems.",
   icons: {
     icon: "/logo.jpg",
   },

@@ -2,7 +2,7 @@
 
 # Ashish Jha
 
-**Full-Stack Developer — portfolio & selected work**
+**Full-Stack Developer | portfolio & selected work**
 
 [![Live Site](https://shieldcn.dev/badge/site-live-4F47E5.svg?logo=vercel)](https://ashishxjha.vercel.app)
 [![GitHub stars](https://shieldcn.dev/github/stars/ashishxjhaa/portfolio.svg?variant=outline)](https://github.com/ashishxjhaa/portfolio/stargazers)
@@ -16,7 +16,7 @@
 
 ## About
 
-Hi, I'm Ashish Jha — a Full-Stack Developer who builds fast, scalable applications from idea to deployment. I work primarily with Next.js, React, TypeScript, and Express.js on the frontend and backend, and Prisma with PostgreSQL for data. I care about clean, maintainable code as much as clean, intuitive UI — and I like shipping things that actually get used.
+Hi, I'm Ashish Jha, a Full-Stack Developer who builds fast, scalable applications from idea to deployment. I work primarily with Next.js, React, TypeScript, and Express.js on the frontend and backend, and Prisma with PostgreSQL for data. I care about clean, maintainable code as much as clean, intuitive UI, and I like shipping things that actually get used.
 
 ---
 
@@ -24,10 +24,10 @@ Hi, I'm Ashish Jha — a Full-Stack Developer who builds fast, scalable applicat
 
 This repo is the source for my personal portfolio at [ashishxjha.vercel.app](https://ashishxjha.vercel.app). The site is a single-page layout with four main sections:
 
-- **About** — intro, resume download, and Cal.com booking
-- **Experience** — work history with company links
-- **Projects** — 4 featured builds with live demos and GitHub repos
-- **Education** — degree and institution
+- **About**: intro, resume download, and Cal.com booking
+- **Experience**: work history with company links
+- **Projects**: 4 featured builds with live demos and GitHub repos
+- **Education**: degree and institution
 
 ---
 
@@ -45,22 +45,22 @@ This repo is the source for my personal portfolio at [ashishxjha.vercel.app](htt
 
 | Project | Description | Links |
 |---------|-------------|-------|
-| **Back It** | Product launch platform — developers list projects, get discovered, and grow through community upvotes, hearts, and saves | [Live](https://back-it-two.vercel.app) · [GitHub](https://github.com/ashishxjhaa/BackIt) |
-| **Echo** | AI-powered customer support — embed a chat widget, train it on your docs, and take over from an operator inbox when needed | [Live](https://echo-chatt.vercel.app) · [GitHub](https://github.com/ashishxjhaa/Echo) |
-| **Rize Plus** | AI resume roaster — upload your resume and get instant, brutally honest feedback on it | [Live](https://rizeplus.vercel.app) · [GitHub](https://github.com/ashishxjhaa/rizeplus) |
+| **Back It** | Product launch platform: developers list projects, get discovered, and grow through community upvotes, hearts, and saves | [Live](https://back-it-two.vercel.app) · [GitHub](https://github.com/ashishxjhaa/BackIt) |
+| **Echo** | AI-powered customer support: embed a chat widget, train it on your docs, and take over from an operator inbox when needed | [Live](https://echo-chatt.vercel.app) · [GitHub](https://github.com/ashishxjhaa/Echo) |
+| **Rize Plus** | AI resume roaster: upload your resume and get instant, brutally honest feedback on it | [Live](https://rizeplus.vercel.app) · [GitHub](https://github.com/ashishxjhaa/rizeplus) |
 | **Lens** | Web-based, read-only crypto wallet for checking balances and activity without holding your keys | [Live](https://lens-wallet.vercel.app) · [GitHub](https://github.com/ashishxjhaa/lens) |
 
 ---
 
 ## Education
 
-**Shoolini University** — Bachelor of Computer Applications · 2025 – 2028 · [shooliniuniversity.com](https://shooliniuniversity.com)
+**Shoolini University**, Bachelor of Computer Applications · 2025 – 2028 · [shooliniuniversity.com](https://shooliniuniversity.com)
 
 ---
 
 ## Tech Stack
 
-Built with Next.js 16, React 19, TypeScript, Tailwind CSS 4, Framer Motion, Cal.com, next-themes, Radix UI, and Sonner — deployed on Vercel.
+Built with Next.js 16, React 19, TypeScript, Tailwind CSS 4, Framer Motion, Cal.com, next-themes, Radix UI, and Sonner, deployed on Vercel.
 
 <div align="center">
 
@@ -108,7 +108,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-> **Note:** `bun`, `yarn`, and `pnpm` also work — both `package-lock.json` and `bun.lock` are included.
+> **Note:** `bun`, `yarn`, and `pnpm` also work; both `package-lock.json` and `bun.lock` are included.
 
 ## Scripts
 
@@ -135,6 +135,6 @@ portfolio/
 
 ## Connect
 
-**Ashish Jha** — [Portfolio](https://ashishxjha.vercel.app) · [GitHub](https://github.com/ashishxjhaa) · [X](https://x.com/ashishxjha) · [Email](mailto:ashishxyzjha@gmail.com)
+**Ashish Jha** · [Portfolio](https://ashishxjha.vercel.app) · [GitHub](https://github.com/ashishxjhaa) · [X](https://x.com/ashishxjha) · [Email](mailto:ashishxyzjha@gmail.com)
 
 ---
