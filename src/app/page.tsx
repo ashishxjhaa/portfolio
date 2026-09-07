@@ -9,13 +9,15 @@ import Skills from "@/components/Skills";
 
 function Home() {
   return (
-    <div className="dark:bg-neutral-900 bg-white pt-4 overflow-x-hidden">
-      <Navbar />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Education />
+    <div className="dark:bg-neutral-900 bg-white overflow-x-hidden">
+      <div className="mx-auto w-full max-w-2xl px-6">
+        <Navbar />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+      </div>
     </div>
   );
 }

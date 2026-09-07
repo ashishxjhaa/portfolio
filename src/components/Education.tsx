@@ -4,14 +4,14 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Education() {
   return (
-    <div className="pt-20 pb-20">
-      <div className="px-10 sm:px-20 dark:text-white text-black max-w-4xl mx-auto">
+    <div className="pt-16 pb-20">
+      <div className="dark:text-white text-black">
         <div className="text-2xl sm:text-4xl font-medium tracking-tight leading-normal">
           Education
         </div>
       </div>
 
-      <div className="w-[90%] mt-10 max-w-3xl mx-auto">
+      <div className="mt-8">
         <a
           onClick={() => new Audio("/switchtab.mp3").play()}
           href="https://shooliniuniversity.com"

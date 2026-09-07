@@ -3,57 +3,49 @@
 const experiences = [
   {
     company: "Betterstacks",
-    role: "Software Development Intern",
-    duration: "Jun 2026 - Aug 2026",
+    role: "Full Stack Web Developer",
+    duration: "Feb 2026 - Aug 2026",
     highlights: [
-      "Built an AI resume-roaster end-to-end: product flow, LLM integration, and usage analytics",
-      "Shipped a QR profile generator and AI voice-calling system that auto-fills profiles from live calls",
-      "Hardened frontend quality across the platform: layout, responsiveness, and component polish",
+      "Owned delivery of production features across frontend and backend in a live SaaS environment",
+      "Integrated LLM-backed product flows with usage analytics under real release pressure",
+      "Hardened platform reliability: shared components, responsiveness, and UX polish on core screens",
     ],
   },
   {
     company: "Betterstacks",
     role: "Full Stack Web Developer",
-    duration: "Oct 2025 - Jan 2026",
+    duration: "Oct 2025 - Dec 2025",
     highlights: [
-      "Owned delivery of production features across frontend and backend in a live SaaS environment",
-      "Shipped reliable user-facing work under real release pressure with strong UX polish",
+      "Built an AI resume-roaster end-to-end: product flow, LLM integration, and usage analytics",
+      "Shipped a QR profile generator and AI voice-calling system that auto-fills profiles from live calls",
+      "Improved frontend quality across the platform: layout, responsiveness, and component polish",
     ],
   },
 ];
 
 function Experience() {
   return (
-    <div className="pt-20">
-      <div className="px-10 sm:px-20 dark:text-white text-black max-w-4xl mx-auto">
-        <div className="text-2xl sm:text-4xl font-medium tracking-tight leading-normal">
-          Experience
-        </div>
-      </div>
-      <div className="w-[90%] mt-10 max-w-3xl mx-auto flex flex-col gap-3">
+    <div className="pt-16">
+      <h2 className="font-sans text-zinc-500">Experience</h2>
+      <div className="mt-4 flex flex-col gap-5">
         {experiences.map((exp) => (
-          <div
-            key={`${exp.company}-${exp.role}`}
-            className="dark:bg-black/30 bg-white rounded-md w-full px-6 sm:px-10 py-5"
-          >
-            <div className="flex justify-between items-start w-full gap-4">
-              <div className="flex flex-col gap-1.5">
-                <div className="text-md font-medium dark:text-white text-black">
-                  <span className="text-sm">{exp.company}</span>
-                </div>
-                <div className="text-xs sm:text-sm dark:text-white/85 text-black/85">
+          <div key={`${exp.company}-${exp.duration}`}>
+            <div className="flex items-baseline justify-between gap-4">
+              <p className="text-[15px] font-medium whitespace-nowrap dark:text-white text-black">
+                {exp.company}
+                <span className="ml-3 font-normal text-zinc-500 dark:text-zinc-400">
                   {exp.role}
-                </div>
-              </div>
-              <div className="opacity-75 dark:text-gray-300 text-neutral-700 whitespace-nowrap text-xs sm:text-md">
+                </span>
+              </p>
+              <p className="m-0 shrink-0 text-sm whitespace-nowrap text-zinc-500 dark:text-zinc-400">
                 {exp.duration}
-              </div>
+              </p>
             </div>
-            <ul className="mt-3 flex flex-col gap-1.5 list-disc pl-4">
+            <ul className="mt-2 list-disc space-y-0.5 pl-5">
               {exp.highlights.map((item) => (
                 <li
                   key={item}
-                  className="text-xs sm:text-sm dark:text-white/70 text-black/70 leading-relaxed"
+                  className="text-sm leading-relaxed dark:text-white/80 text-black/80"
                 >
                   {item}
                 </li>
@@ -65,4 +57,5 @@ function Experience() {
     </div>
   );
 }
+
 export default Experience;

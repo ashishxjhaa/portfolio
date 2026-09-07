@@ -34,13 +34,13 @@ const skillGroups = [
 
 function Skills() {
   return (
-    <div className="pt-20">
-      <div className="px-10 sm:px-20 dark:text-white text-black max-w-4xl mx-auto">
+    <div className="pt-16">
+      <div className="dark:text-white text-black">
         <div className="text-2xl sm:text-4xl font-medium tracking-tight leading-normal">
           Skills
         </div>
       </div>
-      <div className="w-[90%] mt-10 max-w-3xl mx-auto dark:bg-black/30 bg-white rounded-md px-6 sm:px-10 py-6 flex flex-col gap-4">
+      <div className="mt-8 dark:bg-black/30 bg-white rounded-md px-6 sm:px-10 py-6 flex flex-col gap-4">
         {skillGroups.map((group) => (
           <div
             key={group.title}

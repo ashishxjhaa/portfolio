@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { IoIosLink, IoLogoGithub } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
-import { SimpleTooltip } from "./ui/tooltip";
+import { SimpleTooltip, TooltipProvider } from "./ui/tooltip";
 
 type Project = {
   title: string;
@@ -44,13 +44,14 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <div className="pt-20">
-      <div className="px-10 sm:px-20 dark:text-white text-black max-w-4xl mx-auto">
+    <TooltipProvider>
+    <div className="pt-16">
+      <div className="dark:text-white text-black">
         <div className="text-2xl sm:text-3xl font-medium tracking-tight leading-normal">
           Projects
         </div>
       </div>
-      <div className="w-[90%] mt-10 max-w-3xl mx-auto flex flex-col gap-4">
+      <div className="mt-8 flex flex-col gap-4">
         {projects.map((project) => (
           <div
             key={project.title}
@@ -101,6 +102,7 @@ function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    suppressHydrationWarning
                     className="flex items-center dark:text-white text-black cursor-pointer"
                   >
                     <IoIosLink size={22} />
@@ -112,6 +114,7 @@ function Projects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    suppressHydrationWarning
                     className="flex items-center dark:text-white text-black cursor-pointer"
                   >
                     <IoLogoGithub size={22} />
@@ -123,6 +126,7 @@ function Projects() {
         ))}
       </div>
     </div>
+    </TooltipProvider>
   );
 }
 
