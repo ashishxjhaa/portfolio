@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 import { SplashLayout } from "@/components/SplashLayout";
 import { AnimatedLayout } from "@/components/AnimatedLayout";
 import { ThemeProvider } from "@teispace/next-themes";
-import { getTheme, getThemeScript } from "@teispace/next-themes/server";
+import { getThemeScript } from "@teispace/next-themes/server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,12 +31,13 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const initialTheme = await getTheme();
+  // Force light default, never read or write stored/system preference
   const themeScript = getThemeScript({
     attribute: "class",
-    defaultTheme: "system",
-    enableSystem: true,
-    initialTheme: initialTheme ?? undefined,
+    defaultTheme: "light",
+    enableSystem: false,
+    initialTheme: "light",
+    storageMode: "none",
   });
 
   return (
@@ -49,9 +50,10 @@ export default async function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
-          initialTheme={initialTheme ?? undefined}
+          defaultTheme="light"
+          enableSystem={false}
+          initialTheme="light"
+          storage="none"
           noScript
         >
           <SplashLayout>
