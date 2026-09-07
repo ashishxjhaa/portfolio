@@ -15,9 +15,8 @@ export function SplashScreen() {
       transition={{ duration: 0.2, ease: "easeInOut" }}
       className="fixed inset-0 z-50 overflow-hidden"
     >
-      {/* White wipe band: travels right -> left glued to the black splash's
-          receding edge (same timing + easing), so the page content is
-          revealed immediately behind the white edge — one single wipe */}
+      {/* White wipe band: travels right to left, glued to the receding
+          black edge so the page is revealed in a single wipe. */}
       <motion.div
         className="absolute top-0 left-0 z-10 h-full w-16 bg-white sm:w-24"
         initial={{ x: "100vw" }}
@@ -26,7 +25,7 @@ export function SplashScreen() {
         aria-hidden
       />
 
-      {/* Black splash + logo: recedes right -> left via clip-path */}
+      {/* Black splash + logo: recedes right to left via clip-path */}
       <motion.div
         className="absolute inset-0 z-20 flex items-center justify-center bg-black"
         initial={{ clipPath: "inset(0% 0% 0% 0%)" }}

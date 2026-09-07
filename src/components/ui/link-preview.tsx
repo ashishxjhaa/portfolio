@@ -5,18 +5,13 @@ import { encode } from "qss";
 import React from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-import { cn } from "@/lib/utils";
-
 type LinkPreviewProps = {
   children: React.ReactNode;
   url: string;
   className?: string;
   width?: number;
   height?: number;
-} & (
-  | { isStatic: true; imageSrc: string }
-  | { isStatic?: false; imageSrc?: never }
-);
+};
 
 export const LinkPreview = ({
   children,
@@ -24,22 +19,18 @@ export const LinkPreview = ({
   className,
   width = 400,
   height = 250,
-  isStatic = false,
-  imageSrc = "",
 }: LinkPreviewProps) => {
-  const src = isStatic
-    ? imageSrc
-    : `https://api.microlink.io/?${encode({
-        url,
-        screenshot: true,
-        meta: false,
-        embed: "screenshot.url",
-        colorScheme: "light",
-        "viewport.isMobile": false,
-        "viewport.deviceScaleFactor": 1,
-        "viewport.width": 1440,
-        "viewport.height": 900,
-      })}`;
+  const src = `https://api.microlink.io/?${encode({
+    url,
+    screenshot: true,
+    meta: false,
+    embed: "screenshot.url",
+    colorScheme: "light",
+    "viewport.isMobile": false,
+    "viewport.deviceScaleFactor": 1,
+    "viewport.width": 1440,
+    "viewport.height": 900,
+  })}`;
 
   const [isOpen, setOpen] = React.useState(false);
   const [isMounted, setIsMounted] = React.useState(false);
@@ -60,13 +51,13 @@ export const LinkPreview = ({
 
   if (!isMounted) {
     return (
-        <a
-          href={url}
-          className={cn(className)}
-          target="_blank"
-          rel="noopener noreferrer"
-          suppressHydrationWarning
-        >
+      <a
+        href={url}
+        className={className}
+        target="_blank"
+        rel="noopener noreferrer"
+        suppressHydrationWarning
+      >
         {children}
       </a>
     );
@@ -82,7 +73,7 @@ export const LinkPreview = ({
         <a
           href={url}
           onMouseMove={handleMouseMove}
-          className={cn(className)}
+          className={className}
           target="_blank"
           rel="noopener noreferrer"
           suppressHydrationWarning

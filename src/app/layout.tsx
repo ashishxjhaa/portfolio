@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "sonner";
 import { SplashLayout } from "@/components/SplashLayout";
-import { AnimatedLayout } from "@/components/AnimatedLayout";
 import { ThemeProvider } from "@teispace/next-themes";
 import { getThemeScript } from "@teispace/next-themes/server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -31,7 +24,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Force light default, never read or write stored/system preference
   const themeScript = getThemeScript({
     attribute: "class",
     defaultTheme: "light",
@@ -45,9 +37,7 @@ export default async function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -56,12 +46,7 @@ export default async function RootLayout({
           storage="none"
           noScript
         >
-          <SplashLayout>
-            <AnimatedLayout>
-              {children}
-              <Toaster position="bottom-right" theme="dark" />
-            </AnimatedLayout>
-          </SplashLayout>
+          <SplashLayout>{children}</SplashLayout>
         </ThemeProvider>
       </body>
     </html>

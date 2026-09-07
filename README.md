@@ -1,140 +1,97 @@
 <div align="center">
 
+![Ashish Jha](https://shieldcn.dev/header/glow.svg?title=Ashish+Jha&subtitle=Full-Stack+AI+Engineer&theme=orange&logo=https://ashishxjha.vercel.app/logo.png)
+
 # Ashish Jha
 
-**Full-Stack Developer | portfolio & selected work**
+**Full-Stack AI Engineer**
 
-[![Live Site](https://shieldcn.dev/badge/site-live-4F47E5.svg?logo=vercel)](https://ashishxjha.vercel.app)
-[![GitHub stars](https://shieldcn.dev/github/stars/ashishxjhaa/portfolio.svg?variant=outline)](https://github.com/ashishxjhaa/portfolio/stargazers)
-[![Open to work](https://shieldcn.dev/badge/status-open%20to%20work-34D399.svg?variant=outline)](mailto:ashishxyzjha@gmail.com)
+[![Portfolio](https://shieldcn.dev/badge/portfolio-live-ff5800.svg?logo=vercel)](https://ashishxjha.vercel.app)
+[![Resume](https://shieldcn.dev/badge/resume-pdf-black.svg?logo=readthedocs&variant=outline)](https://ashishxjha.vercel.app/Ashish_Jha_Resume.pdf)
+[![Book a call](https://shieldcn.dev/badge/book-a%20call-ff5800.svg?logo=caldotcom&variant=outline)](https://cal.com/ashishxjha/quickchat)
+[![GitHub](https://shieldcn.dev/badge/github-ashishxjhaa-black.svg?logo=github&variant=outline)](https://github.com/ashishxjhaa)
 
-[Live Site](https://ashishxjha.vercel.app) · [Resume](https://ashishxjha.vercel.app/Ashish_Jha_Resume.pdf) · [Book a Call](https://cal.com/ashishxjha/quickchat) · [Email](mailto:ashishxyzjha@gmail.com) · [GitHub](https://github.com/ashishxjhaa) · [X](https://x.com/ashishxjha)
+[Portfolio](https://ashishxjha.vercel.app) · [Resume](https://ashishxjha.vercel.app/Ashish_Jha_Resume.pdf) · [Book a Call](https://cal.com/ashishxjha/quickchat) · [Email](mailto:ashishxyzjha@gmail.com) · [GitHub](https://github.com/ashishxjhaa) · [X](https://x.com/ashishxjha)
 
 </div>
-
----
 
 ## About
 
-Hi, I'm Ashish Jha, a Full-Stack Developer who builds fast, scalable applications from idea to deployment. I work primarily with Next.js, React, TypeScript, and Express.js on the frontend and backend, and Prisma with PostgreSQL for data. I care about clean, maintainable code as much as clean, intuitive UI, and I like shipping things that actually get used.
+Hi, I am Ashish Jha. I build production web products and applied AI systems end to end. I care about visual craft, and I obsess over work that feels fast and polished.
 
----
+I recently built [Zuno](https://zuno.ashishjha.xyz/), an AI website builder, and [ShowHunt](https://showhunt.ashishjha.xyz/), a voice AI product launch platform.
 
-## What You'll Find
-
-This repo is the source for my personal portfolio at [ashishxjha.vercel.app](https://ashishxjha.vercel.app). The site is a single-page layout with four main sections:
-
-- **About**: intro, resume download, and Cal.com booking
-- **Experience**: work history with company links
-- **Projects**: 4 featured builds with live demos and GitHub repos
-- **Education**: degree and institution
-
----
+I am looking for Full-Stack AI Engineer roles where I can contribute and grow.
 
 ## Experience
 
-| | |
-|---|---|
-| **Betterstacks** | Full Stack Web Developer · Oct 2025 – Jan 2026 |
-| Highlights | Built the AI resume roaster feature end-to-end along with an analytics dashboard for tracking usage and engagement. Also shipped a QR code generator tied to user profiles and an AI voice calling system that auto-fills profiles from a call, plus various frontend fixes and polish across the platform. |
-| Link | [betterstacks.com](https://betterstacks.com) |
+**Betterstacks** · Full Stack Web Developer · Feb 2026 - Aug 2026
 
----
+- Owned production features across frontend and backend in a live SaaS environment
+- Integrated LLM-backed product flows with usage analytics under real release pressure
+- Hardened platform reliability: shared components, responsiveness, and UX polish on core screens
 
-## Featured Projects
+**Betterstacks** · Full Stack Web Developer · Oct 2025 - Dec 2025
 
-| Project | Description | Links |
-|---------|-------------|-------|
-| **Back It** | Product launch platform: developers list projects, get discovered, and grow through community upvotes, hearts, and saves | [Live](https://back-it-two.vercel.app) · [GitHub](https://github.com/ashishxjhaa/BackIt) |
-| **Echo** | AI-powered customer support: embed a chat widget, train it on your docs, and take over from an operator inbox when needed | [Live](https://echo-chatt.vercel.app) · [GitHub](https://github.com/ashishxjhaa/Echo) |
-| **Rize Plus** | AI resume roaster: upload your resume and get instant, brutally honest feedback on it | [Live](https://rizeplus.vercel.app) · [GitHub](https://github.com/ashishxjhaa/rizeplus) |
-| **Lens** | Web-based, read-only crypto wallet for checking balances and activity without holding your keys | [Live](https://lens-wallet.vercel.app) · [GitHub](https://github.com/ashishxjhaa/lens) |
+- Built an AI resume-roaster end to end: product flow, LLM integration, and usage analytics
+- Shipped a QR profile generator and an AI voice-calling system that auto-fills profiles from live calls
+- Improved frontend quality across the platform: layout, responsiveness, and component polish
 
----
+[betterstacks.com](https://betterstacks.com)
 
-## Education
+## Projects
 
-**Shoolini University**, Bachelor of Computer Applications · 2025 – 2028 · [shooliniuniversity.com](https://shooliniuniversity.com)
+**[Zuno](https://zuno.ashishjha.xyz/)** · [GitHub](https://github.com/ashishxjhaa/Zuno) · [Demo](https://x.com/ashishxjha/status/2096617739490373868)
 
----
+An agentic AI website builder. Describe what you want, pick a stack, and get a live preview you can push and publish.
 
-## Tech Stack
+**[ShowHunt](https://showhunt.ashishjha.xyz/)** · [GitHub](https://github.com/ashishxjhaa/showhunt) · [Demo](https://x.com/ashishxjha/status/2095839165665747453)
 
-Built with Next.js 16, React 19, TypeScript, Tailwind CSS 4, Framer Motion, Cal.com, next-themes, Radix UI, and Sonner, deployed on Vercel.
+A voice AI product launch platform. Cody navigates, routes, and fills forms from any user query.
 
 <div align="center">
 
-![Next.js](https://shieldcn.dev/badge/Next.js-16-black.svg?logo=nextdotjs&variant=secondary&size=sm)
-![React](https://shieldcn.dev/badge/React-19-blue.svg?logo=react&variant=secondary&size=sm)
-![TypeScript](https://shieldcn.dev/badge/TypeScript-5-blue.svg?logo=typescript&variant=secondary&size=sm)
-![Tailwind CSS](https://shieldcn.dev/badge/Tailwind-4-38BDF8.svg?logo=tailwindcss&variant=secondary&size=sm)
-![Framer Motion](https://shieldcn.dev/badge/Motion-12-black.svg?logo=framer&variant=secondary&size=sm)
-![Vercel](https://shieldcn.dev/badge/Vercel-deployed-black.svg?logo=vercel&variant=secondary&size=sm)
+[![Zuno](https://shieldcn.dev/badge/Zuno-live-ff5800.svg?logo=nextdotjs&variant=secondary&size=sm)](https://zuno.ashishjha.xyz/)
+[![ShowHunt](https://shieldcn.dev/badge/ShowHunt-live-ff5800.svg?logo=openai&variant=secondary&size=sm)](https://showhunt.ashishjha.xyz/)
 
 </div>
 
----
+## Skills
 
-## Site Features
+<div align="center">
 
-- **Animated splash screen** on load
-- **Dark / light theme** with system default
-- **Cal.com scheduling** embed for booking calls
-- **Resume PDF download** with a friendly redirect alias
-- **Subtle sound effects** on navigation and link clicks
-- **Responsive, mobile-first layout** across all sections
+![LLMs](https://shieldcn.dev/badge/LLMs-black.svg?variant=secondary&size=sm)
+![AI Agents](https://shieldcn.dev/badge/AI%20Agents-black.svg?variant=secondary&size=sm)
+![Voice AI](https://shieldcn.dev/badge/Voice%20AI-black.svg?variant=secondary&size=sm)
+![RAG](https://shieldcn.dev/badge/RAG-black.svg?variant=secondary&size=sm)
+![React](https://shieldcn.dev/badge/React-blue.svg?logo=react&variant=secondary&size=sm)
+![Next.js](https://shieldcn.dev/badge/Next.js-black.svg?logo=nextdotjs&variant=secondary&size=sm)
+![TypeScript](https://shieldcn.dev/badge/TypeScript-blue.svg?logo=typescript&variant=secondary&size=sm)
+![Node.js](https://shieldcn.dev/badge/Node.js-green.svg?logo=nodedotjs&variant=secondary&size=sm)
+![Bun](https://shieldcn.dev/badge/Bun-black.svg?logo=bun&variant=secondary&size=sm)
+![PostgreSQL](https://shieldcn.dev/badge/PostgreSQL-blue.svg?logo=postgresql&variant=secondary&size=sm)
+![Prisma](https://shieldcn.dev/badge/Prisma-black.svg?logo=prisma&variant=secondary&size=sm)
+![Drizzle](https://shieldcn.dev/badge/Drizzle-green.svg?logo=drizzle&variant=secondary&size=sm)
+![AWS](https://shieldcn.dev/badge/AWS-orange.svg?logo=amazonwebservices&variant=secondary&size=sm)
+![Docker](https://shieldcn.dev/badge/Docker-blue.svg?logo=docker&variant=secondary&size=sm)
+![Vercel](https://shieldcn.dev/badge/Vercel-black.svg?logo=vercel&variant=secondary&size=sm)
 
----
+</div>
 
-## Getting Started
+| Area | |
+|------|--|
+| Applied AI | LLMs · AI Agents · Voice AI · Sandboxing · Tool calling · RAG |
+| Frontend | React · Next.js · TypeScript · JavaScript · Tailwind CSS |
+| Backend | Node.js · Bun · Express.js · REST APIs · WebSockets |
+| Databases | PostgreSQL · Prisma · MongoDB · Drizzle · Redis |
+| DevOps | Git · GitHub · Docker · Turborepo · AWS (EC2 & S3) · Nginx · Vercel · CI/CD |
 
-### Prerequisites
+## Education
 
-- Node.js 20+ or [Bun](https://bun.sh/)
-
-### Installation
-
-```bash
-git clone https://github.com/ashishxjhaa/portfolio.git
-cd portfolio
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-> **Note:** `bun`, `yarn`, and `pnpm` also work; both `package-lock.json` and `bun.lock` are included.
-
-## Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start the development server on port 3000 |
-| `npm run build` | Create a production build |
-| `npm run start` | Start the production server |
-| `npm run lint` | Run ESLint |
-
-## Project Structure
-
-```
-portfolio/
-├── public/              # Resume PDF, logo, sound effects
-├── src/
-│   ├── app/             # Layout, page, and global styles
-│   └── components/      # About, Experience, Projects, Education, Navbar, Splash
-├── vercel.json          # Resume redirect
-└── package.json
-```
-
----
+**[Shoolini University](https://shooliniuniversity.com)** · Bachelor of Computer Applications · 2025 - 2028
 
 ## Connect
 
-**Ashish Jha** · [Portfolio](https://ashishxjha.vercel.app) · [GitHub](https://github.com/ashishxjhaa) · [X](https://x.com/ashishxjha) · [Email](mailto:ashishxyzjha@gmail.com)
+Want to talk? [Book a call](https://cal.com/ashishxjha/quickchat) or read [my resume](https://ashishxjha.vercel.app/Ashish_Jha_Resume.pdf).
 
----
+[Portfolio](https://ashishxjha.vercel.app) · [GitHub](https://github.com/ashishxjhaa) · [X](https://x.com/ashishxjha) · [Email](mailto:ashishxyzjha@gmail.com)

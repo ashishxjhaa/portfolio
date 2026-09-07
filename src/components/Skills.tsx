@@ -1,5 +1,3 @@
-"use client";
-
 const skillGroups = [
   {
     title: "Applied AI",
