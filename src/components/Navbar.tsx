@@ -24,16 +24,16 @@ function Navbar() {
           rel="noopener noreferrer"
           className="group relative mx-4 flex items-center gap-2 opacity-70 transition-opacity hover:opacity-100"
         >
-          <span className="flex items-center gap-2 font-bold text-black transition-transform duration-500 ease-in-out group-hover:-translate-x-2 dark:text-white">
+          <span className="flex items-center gap-2 font-bold text-black opacity-70 transition-transform duration-500 ease-in-out group-hover:-translate-x-2 group-hover:opacity-100 dark:text-white">
             <FaGithub />
-            <div className="text-xs font-bold uppercase tracking-widest sm:text-sm">
+            <div className="text-xs font-bold uppercase tracking-widest opacity-70 group-hover:opacity-100 sm:text-sm">
               GitHub
             </div>
           </span>
           <IconArrowUpRight
             size={48}
             strokeWidth={1}
-            className="absolute -right-8 h-5.5 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 text-black dark:text-white"
+            className="absolute -right-8 h-5.5 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 dark:text-white text-black"
           />
         </a>
         <ThemeButton />
