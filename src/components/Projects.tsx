@@ -42,7 +42,7 @@ function Links({ project }: { project: Project }) {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => new Audio("/switchtab.mp3").play()}
-        className="transition-colors hover:text-[#ff5800]"
+        className="transition-colors hover:text-[#2F6BFF]"
       >
         Live
       </a>
@@ -54,7 +54,7 @@ function Links({ project }: { project: Project }) {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => new Audio("/switchtab.mp3").play()}
-        className="transition-colors hover:text-[#ff5800]"
+        className="transition-colors hover:text-[#2F6BFF]"
       >
         GitHub
       </a>
@@ -66,7 +66,7 @@ function Links({ project }: { project: Project }) {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => new Audio("/switchtab.mp3").play()}
-        className="transition-colors hover:text-[#ff5800]"
+        className="transition-colors hover:text-[#2F6BFF]"
       >
         Demo
       </a>

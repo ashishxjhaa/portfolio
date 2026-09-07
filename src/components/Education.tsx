@@ -22,7 +22,7 @@ function Education() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => new Audio("/switchtab.mp3").play()}
-              className="text-[15px] font-medium dark:text-white text-black transition-colors hover:text-[#ff5800]"
+              className="text-[15px] font-medium dark:text-white text-black transition-colors hover:text-[#2F6BFF]"
             >
               Shoolini University
             </a>

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { LinkPreview } from "@/components/ui/link-preview";
 
-const highlight = "text-[#ff5800]";
+const highlight = "text-[#2F6BFF]";
 
 function About() {
   return (
