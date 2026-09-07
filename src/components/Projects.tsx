@@ -1,132 +1,100 @@
 "use client";
 
-import Image from "next/image";
-import { IoIosLink, IoLogoGithub } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
-import { SimpleTooltip, TooltipProvider } from "./ui/tooltip";
-
 type Project = {
   title: string;
   description: string;
-  image: string;
+  video: string;
   liveUrl: string;
   githubUrl: string;
-  demoUrl?: string;
+  demoUrl: string;
 };
 
 const projects: Project[] = [
   {
     title: "Zuno",
     description:
-      "Chat-only AI website builder: describe a site, get a live Vite + React + TypeScript preview, then iterate entirely through conversation.",
-    image: "/projects/zuno.jpg",
-    liveUrl: "https://zuno-web.vercel.app/",
+      "An agentic AI website builder: describe what you want, pick a stack, and get a live preview you can push and publish.",
+    video: "/projects/zuno.mp4",
+    liveUrl: "https://zuno.ashishjha.xyz/",
     githubUrl: "https://github.com/ashishxjhaa/Zuno",
-    demoUrl: "https://x.com/ashishxjha/status/2091464971934945340",
+    demoUrl: "https://x.com/ashishxjha/status/2096617739490373868",
   },
   {
-    title: "Back It",
+    title: "ShowHunt",
     description:
-      "A product launch platform where developers list projects, get discovered, and grow through community upvotes, hearts, and saves.",
-    image: "/projects/back-it.jpg",
-    liveUrl: "https://back-it-two.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/BackIt",
-  },
-  {
-    title: "Echo",
-    description:
-      "An AI-powered customer support platform: embed a chat widget, train it on your docs, and take over from an operator inbox when needed.",
-    image: "/projects/echo-v2.jpg",
-    liveUrl: "https://echo-chatt.vercel.app",
-    githubUrl: "https://github.com/ashishxjhaa/Echo",
+      "A voice AI product launch platform where Cody navigates, routes, and fills forms from any user query.",
+    video: "/projects/showhunt.mp4",
+    liveUrl: "https://showhunt.ashishjha.xyz/",
+    githubUrl: "https://github.com/ashishxjhaa/showhunt",
+    demoUrl: "https://x.com/ashishxjha/status/2095839165665747453",
   },
 ];
 
 function Projects() {
   return (
-    <TooltipProvider>
     <div className="pt-16">
-      <div className="dark:text-white text-black">
-        <div className="text-2xl sm:text-3xl font-medium tracking-tight leading-normal">
-          Projects
-        </div>
-      </div>
-      <div className="mt-8 flex flex-col gap-4">
+      <h2 className="font-sans text-zinc-500">Projects</h2>
+      <div className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2">
         {projects.map((project) => (
-          <div
-            key={project.title}
-            className="flex flex-col sm:flex-row sm:items-stretch dark:bg-black/30 bg-white dark:hover:bg-[#262626]/20 hover:bg-gray-300/20 rounded-md w-full overflow-hidden mx-auto"
-          >
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => new Audio("/switchtab.mp3").play()}
-              className="relative w-full sm:w-[55%] aspect-[16/10] overflow-hidden shrink-0 sm:border-r dark:border-white/5 border-black/5 order-1"
-            >
-              <Image
-                src={project.image}
-                alt={`${project.title} screenshot`}
-                fill
-                sizes="(max-width: 640px) 90vw, 420px"
-                className="object-cover object-top transition-transform duration-500 ease-out hover:scale-[1.02]"
-              />
-            </a>
-
-            <div className="flex flex-col justify-between gap-4 px-6 sm:px-8 py-5 sm:w-[45%] order-2 self-stretch">
-              <div className="flex flex-col gap-2 dark:text-white text-black">
-                <div className="flex items-center gap-3 flex-wrap">
-                  <div className="text-md font-medium">{project.title}</div>
-                  {project.demoUrl ? (
-                    <a
-                      onClick={() => new Audio("/switchtab.mp3").play()}
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-medium text-[#ff5800] hover:opacity-80"
-                    >
-                      <FaXTwitter size={12} />
-                      Watch demo
-                    </a>
-                  ) : null}
-                </div>
-                <div className="text-sm opacity-70 leading-relaxed">
-                  {project.description}
-                </div>
+          <div key={project.title} className="flex flex-col">
+            <div className="rounded-xl bg-zinc-200/80 p-2 dark:bg-zinc-800">
+              <div className="aspect-[16/10] overflow-hidden rounded-lg">
+                <video
+                  src={project.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-cover"
+                />
               </div>
+            </div>
 
-              <div className="flex gap-5">
-                <SimpleTooltip content="Open Project Link">
-                  <a
-                    onClick={() => new Audio("/switchtab.mp3").play()}
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    suppressHydrationWarning
-                    className="flex items-center dark:text-white text-black cursor-pointer"
-                  >
-                    <IoIosLink size={22} />
-                  </a>
-                </SimpleTooltip>
-                <SimpleTooltip content="View Source Code">
-                  <a
-                    onClick={() => new Audio("/switchtab.mp3").play()}
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    suppressHydrationWarning
-                    className="flex items-center dark:text-white text-black cursor-pointer"
-                  >
-                    <IoLogoGithub size={22} />
-                  </a>
-                </SimpleTooltip>
-              </div>
+            <h3 className="mt-2.5 text-[15px] font-medium dark:text-white text-black">
+              {project.title}
+            </h3>
+            <p className="mt-0.5 text-[15px] leading-relaxed text-zinc-500 dark:text-zinc-400">
+              {project.description}
+            </p>
+            <div className="mt-2 flex items-center gap-3 text-[15px] text-zinc-500 dark:text-zinc-400">
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => new Audio("/switchtab.mp3").play()}
+                className="transition-colors hover:text-[#ff5800]"
+              >
+                Live
+              </a>
+              <span aria-hidden className="text-zinc-300 dark:text-zinc-600">
+                /
+              </span>
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => new Audio("/switchtab.mp3").play()}
+                className="transition-colors hover:text-[#ff5800]"
+              >
+                GitHub
+              </a>
+              <span aria-hidden className="text-zinc-300 dark:text-zinc-600">
+                /
+              </span>
+              <a
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => new Audio("/switchtab.mp3").play()}
+                className="transition-colors hover:text-[#ff5800]"
+              >
+                Demo
+              </a>
             </div>
           </div>
         ))}
       </div>
     </div>
-    </TooltipProvider>
   );
 }
 
