@@ -2,20 +2,27 @@
 
 const skillGroups = [
   {
+    title: "Applied AI",
+    skills: [
+      "LLMs",
+      "AI Agents",
+      "Voice AI",
+      "Sandboxing",
+      "Tool calling",
+      "RAG",
+    ],
+  },
+  {
     title: "Frontend",
     skills: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js", "Convex", "REST APIs", "WebSockets"],
+    skills: ["Node.js", "Bun", "Express.js", "REST APIs", "WebSockets"],
   },
   {
     title: "Databases",
-    skills: ["PostgreSQL", "MongoDB", "Prisma", "Drizzle", "Redis"],
-  },
-  {
-    title: "Applied AI",
-    skills: ["LLMs", "RAG", "Embeddings", "AI Agents", "MCP", "Sandboxing"],
+    skills: ["PostgreSQL", "Prisma", "MongoDB", "Drizzle", "Redis"],
   },
   {
     title: "DevOps & Tools",
@@ -24,10 +31,10 @@ const skillGroups = [
       "GitHub",
       "Docker",
       "Turborepo",
-      "AWS",
+      "AWS (EC2 & S3)",
+      "Nginx",
+      "Vercel",
       "CI/CD",
-      "CDN",
-      "Postman",
     ],
   },
 ];
@@ -35,21 +42,17 @@ const skillGroups = [
 function Skills() {
   return (
     <div className="pt-16">
-      <div className="dark:text-white text-black">
-        <div className="text-2xl sm:text-4xl font-medium tracking-tight leading-normal">
-          Skills
-        </div>
-      </div>
-      <div className="mt-8 dark:bg-black/30 bg-white rounded-md px-6 sm:px-10 py-6 flex flex-col gap-4">
+      <h2 className="font-sans text-zinc-500">Skills</h2>
+      <div className="mt-4 flex flex-col gap-3">
         {skillGroups.map((group) => (
           <div
             key={group.title}
-            className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4"
+            className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4"
           >
-            <div className="text-sm font-medium dark:text-white text-black w-32 shrink-0">
+            <div className="text-[15px] font-medium dark:text-white text-black sm:w-40 shrink-0">
               {group.title}
             </div>
-            <div className="text-sm dark:text-white/75 text-black/75 leading-relaxed">
+            <div className="text-[15px] leading-relaxed text-zinc-500 dark:text-zinc-400">
               {group.skills.join(" · ")}
             </div>
           </div>
