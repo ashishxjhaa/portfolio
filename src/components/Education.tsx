@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { playSwitchTab } from "@/lib/playSwitchTab";
 
 function Education() {
   return (
@@ -21,7 +22,7 @@ function Education() {
               href="https://shooliniuniversity.com"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => new Audio("/switchtab.mp3").play()}
+              onClick={playSwitchTab}
               className="text-[15px] font-medium dark:text-white text-black transition-colors hover:text-[#2F6BFF]"
             >
               Shoolini University

@@ -3,6 +3,7 @@
 import { ThemeButton } from "./ThemeButton";
 import { FaGithub } from "react-icons/fa";
 import { IconArrowUpRight } from "@tabler/icons-react";
+import { playSwitchTab } from "@/lib/playSwitchTab";
 
 function Navbar() {
   return (
@@ -19,7 +20,7 @@ function Navbar() {
       <div className="flex items-center gap-8">
         <a
           href="https://github.com/ashishxjhaa"
-          onClick={() => new Audio("/switchtab.mp3").play()}
+          onClick={playSwitchTab}
           target="_blank"
           rel="noopener noreferrer"
           className="group relative mx-4 flex items-center gap-2 opacity-70 transition-opacity hover:opacity-100"

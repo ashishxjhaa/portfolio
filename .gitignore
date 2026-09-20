@@ -23,6 +23,7 @@
 
 # misc
 .DS_Store
+.tmp-resume/
 *.pem
 
 # debug

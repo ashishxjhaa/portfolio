@@ -4,19 +4,19 @@ const experiences = [
     role: "Full Stack Web Developer",
     duration: "Feb 2026 - Aug 2026",
     highlights: [
-      "Owned delivery of production features across frontend and backend in a live SaaS environment",
-      "Integrated LLM-backed product flows with usage analytics under real release pressure",
-      "Hardened platform reliability: shared components, responsiveness, and UX polish on core screens",
+      "Shipped an AI voice-calling system that transcribes live calls and auto-fills user profiles, plus a QR profile generator around it",
+      "Built an AI resume-roaster in production: the product flow, LLM integration, and usage analytics",
+      "Owned full-stack delivery on the live product: APIs, UI, shared components, and reliability on core screens",
     ],
   },
   {
     company: "Betterstacks",
-    role: "Full Stack Web Developer",
+    role: "Full Stack Developer Intern",
     duration: "Oct 2025 - Dec 2025",
     highlights: [
-      "Built an AI resume-roaster end-to-end: product flow, LLM integration, and usage analytics",
-      "Shipped a QR profile generator and AI voice-calling system that auto-fills profiles from live calls",
-      "Improved frontend quality across the platform: layout, responsiveness, and component polish",
+      "Implemented responsive layouts and shared UI components across core product screens",
+      "Helped wire LLM-backed flows and usage tracking into existing features",
+      "Fixed frontend polish: spacing, breakpoints, and component consistency",
     ],
   },
 ];

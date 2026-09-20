@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { playSwitchTab } from "@/lib/playSwitchTab";
 
 type Project = {
   title: string;
@@ -32,6 +33,15 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ashishxjhaa/showhunt",
     demoUrl: "https://x.com/ashishxjha/status/2095839165665747453",
   },
+  {
+    title: "Matiks",
+    description:
+      "Realtime 1v1 mental math duels: matchmake against online players, race through arithmetic, and win the 60-second sprint.",
+    video: "/projects/matiks.mp4",
+    liveUrl: "https://matiks.ashishjha.xyz/",
+    githubUrl: "https://github.com/ashishxjhaa/matiks",
+    demoUrl: "https://x.com/ashishxjha/status/2101620074251800853",
+  },
 ];
 
 function Links({ project }: { project: Project }) {
@@ -41,7 +51,7 @@ function Links({ project }: { project: Project }) {
         href={project.liveUrl}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => new Audio("/switchtab.mp3").play()}
+        onClick={playSwitchTab}
         className="transition-colors hover:text-[#2F6BFF]"
       >
         Live
@@ -53,7 +63,7 @@ function Links({ project }: { project: Project }) {
         href={project.githubUrl}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => new Audio("/switchtab.mp3").play()}
+        onClick={playSwitchTab}
         className="transition-colors hover:text-[#2F6BFF]"
       >
         GitHub
@@ -65,7 +75,7 @@ function Links({ project }: { project: Project }) {
         href={project.demoUrl}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => new Audio("/switchtab.mp3").play()}
+        onClick={playSwitchTab}
         className="transition-colors hover:text-[#2F6BFF]"
       >
         Demo
@@ -92,11 +102,11 @@ function Video({ src }: { src: string }) {
 }
 
 function Projects() {
-  const [view, setView] = useState<View>("grid");
+  const [view, setView] = useState<View>("list");
 
   const changeView = (next: View) => {
     if (next === view) return;
-    new Audio("/switchtab.mp3").play();
+    playSwitchTab();
     setView(next);
   };
 

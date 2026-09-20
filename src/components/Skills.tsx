@@ -1,38 +1,42 @@
 const skillGroups = [
   {
     title: "Applied AI",
-    skills: [
-      "LLMs",
-      "AI Agents",
-      "Voice AI",
-      "Sandboxing",
-      "Tool calling",
-      "RAG",
+    lines: [
+      [
+        "LLMs",
+        "Fine-tuning",
+        "AI Agents",
+        "Tool calling",
+        "MCP",
+        "RAG",
+      ],
+      [
+        "Context",
+        "Memory",
+        "Voice AI",
+        "Sandboxing",
+        "Harness",
+        "Evals",
+      ],
     ],
   },
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
+    lines: [["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"]],
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Bun", "Express.js", "REST APIs", "WebSockets"],
+    lines: [["Node.js", "Bun", "Express.js", "REST APIs", "WebSockets"]],
   },
   {
     title: "Databases",
-    skills: ["PostgreSQL", "Prisma", "MongoDB", "Drizzle", "Redis"],
+    lines: [["PostgreSQL", "Prisma", "MongoDB", "Drizzle", "Redis"]],
   },
   {
     title: "DevOps & Tools",
-    skills: [
-      "Git",
-      "GitHub",
-      "Docker",
-      "Turborepo",
-      "AWS (EC2 & S3)",
-      "Nginx",
-      "Vercel",
-      "CI/CD",
+    lines: [
+      ["Git", "GitHub", "Docker", "Turborepo", "AWS (EC2 & S3)"],
+      ["Nginx", "Vercel", "CI/CD"],
     ],
   },
 ];
@@ -51,7 +55,9 @@ function Skills() {
               {group.title}
             </div>
             <div className="text-[15px] leading-relaxed text-zinc-500 dark:text-zinc-400">
-              {group.skills.join(" · ")}
+              {group.lines.map((line, lineIndex) => (
+                <div key={lineIndex}>{line.join(" · ")}</div>
+              ))}
             </div>
           </div>
         ))}

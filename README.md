@@ -17,25 +17,25 @@
 
 ## About
 
-Hi, I am Ashish Jha. I build production web products and applied AI systems end to end. I care about visual craft, and I obsess over work that feels fast and polished.
+Hi, I'm a developer.
 
-I recently built [Zuno](https://zuno.ashishjha.xyz/), an AI website builder, and [ShowHunt](https://showhunt.ashishjha.xyz/), a voice AI product launch platform.
+I recently built [Zuno](https://zuno.ashishjha.xyz/), an AI website builder so anyone can describe what they want and get a site, and [ShowHunt](https://showhunt.ashishjha.xyz/), a Voice AI Product Launch Platform whose voice agent controls the full workflow from navigation to routing and form filling.
 
-I am looking for Full-Stack AI Engineer roles where I can contribute and grow.
+Currently, I'm looking for Full-Stack AI Engineer roles.
 
 ## Experience
 
 **Betterstacks** · Full Stack Web Developer · Feb 2026 - Aug 2026
 
-- Owned production features across frontend and backend in a live SaaS environment
-- Integrated LLM-backed product flows with usage analytics under real release pressure
-- Hardened platform reliability: shared components, responsiveness, and UX polish on core screens
+- Shipped an AI voice-calling system that transcribes live calls and auto-fills user profiles, plus a QR profile generator around it
+- Built an AI resume-roaster in production: the product flow, LLM integration, and usage analytics
+- Owned full-stack delivery on the live product: APIs, UI, shared components, and reliability on core screens
 
-**Betterstacks** · Full Stack Web Developer · Oct 2025 - Dec 2025
+**Betterstacks** · Full Stack Developer Intern · Oct 2025 - Dec 2025
 
-- Built an AI resume-roaster end to end: product flow, LLM integration, and usage analytics
-- Shipped a QR profile generator and an AI voice-calling system that auto-fills profiles from live calls
-- Improved frontend quality across the platform: layout, responsiveness, and component polish
+- Implemented responsive layouts and shared UI components across core product screens
+- Helped wire LLM-backed flows and usage tracking into existing features
+- Fixed frontend polish: spacing, breakpoints, and component consistency
 
 [betterstacks.com](https://betterstacks.com)
 
@@ -48,6 +48,10 @@ An agentic AI website builder. Describe what you want, pick a stack, and get a l
 **[ShowHunt](https://showhunt.ashishjha.xyz/)** · [GitHub](https://github.com/ashishxjhaa/showhunt) · [Demo](https://x.com/ashishxjha/status/2095839165665747453)
 
 A voice AI product launch platform. Cody navigates, routes, and fills forms from any user query.
+
+**[Matiks](https://matiks.ashishjha.xyz/)** · [GitHub](https://github.com/ashishxjhaa/matiks) · [Demo](https://x.com/ashishxjha/status/2101620074251800853)
+
+Realtime 1v1 mental math duels: matchmake against online players, race through arithmetic, and win the 60-second sprint.
 
 <div align="center">
 
@@ -80,7 +84,7 @@ A voice AI product launch platform. Cody navigates, routes, and fills forms from
 
 | Area | |
 |------|--|
-| Applied AI | LLMs · AI Agents · Voice AI · Sandboxing · Tool calling · RAG |
+| Applied AI | LLMs · Fine-tuning · AI Agents · Tool calling · MCP · RAG · Context · Memory · Voice AI · Sandboxing · Harness · Evals |
 | Frontend | React · Next.js · TypeScript · JavaScript · Tailwind CSS |
 | Backend | Node.js · Bun · Express.js · REST APIs · WebSockets |
 | Databases | PostgreSQL · Prisma · MongoDB · Drizzle · Redis |

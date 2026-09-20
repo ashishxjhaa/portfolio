@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { playSwitchTab } from "@/lib/playSwitchTab";
 
 const highlight = "text-[#2F6BFF]";
 
@@ -11,7 +12,7 @@ function About() {
       <BookCall />
       <div className="pt-12 flex flex-col gap-3">
         <p className="text-md dark:text-white/85 text-black/85 font-sans">
-          Hi, I&apos;m a developer who enjoys building AI products end to end.
+          Hi, I&apos;m a developer.
         </p>
         <div className="text-md dark:text-white/85 text-black/85 font-sans">
           I recently built{" "}
@@ -22,7 +23,7 @@ function About() {
             zuno
           </LinkPreview>{" "}
           AI website builder so anyone can build website just describe what you want
-          and select tech stack and also build{" "}
+          and also build{" "}
           <LinkPreview
             url="https://showhunt.ashishjha.xyz/"
             className={highlight}
@@ -30,13 +31,10 @@ function About() {
             showhunt
           </LinkPreview>{" "}
           Voice AI Product Launch Platform, a voice agent that controls the full
-          workflow from navigation to routing even filling form giving any user
-          query related to platform.
+          workflow from navigation to routing even filling form.
         </div>
         <p className="text-md dark:text-white/85 text-black/85 font-sans">
-          Currently, I&apos;m looking for Full-Stack AI Engineer roles where i
-          can contribute and grow. I care deeply about visual craft and obsess
-          over building products that feel fast, polished.
+          Currently, I&apos;m looking for Full-Stack AI Engineer roles.
         </p>
         <p className="text-md dark:text-white/85 text-black/85 font-sans">
           Want to talk?{" "}
@@ -53,7 +51,7 @@ function About() {
             href="/Ashish_Jha_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => new Audio("/switchtab.mp3").play()}
+            onClick={playSwitchTab}
             className={highlight}
           >
             My resume
