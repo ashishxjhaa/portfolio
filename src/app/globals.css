@@ -38,6 +38,10 @@
     }
 }
 
+::view-transition {
+    pointer-events: none;
+}
+
 ::view-transition-group(root) {
     animation-duration: 0.9s;
     animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
