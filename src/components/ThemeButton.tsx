@@ -3,6 +3,7 @@
 import { useTheme } from "@teispace/next-themes";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { flushSync } from "react-dom";
 import { playSwitchTab } from "@/lib/playSwitchTab";
 
 const SPRING = {
@@ -75,7 +76,19 @@ export function ThemeButton() {
       type="button"
       onClick={() => {
         playSwitchTab();
-        setTheme(isDark ? "light" : "dark");
+        const next = isDark ? "light" : "dark";
+        const apply = () => {
+          flushSync(() => {
+            setTheme(next);
+          });
+        };
+
+        if (!document.startViewTransition) {
+          apply();
+          return;
+        }
+
+        document.startViewTransition(apply);
       }}
       suppressHydrationWarning
       className="relative grid size-9 cursor-pointer place-items-center overflow-visible text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white"
